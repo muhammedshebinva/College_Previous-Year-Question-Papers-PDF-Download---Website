@@ -1,0 +1,29 @@
+<section>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="text-center">Add File</h2>
+                <form action="/admin/add-file" method="POST" enctype="multipart/form-data">
+  
+                    <label for="">Course</label>
+                    <input type="text" name="Name" class="form-control">
+                    
+                    <label for="">UG or PG</label>
+                    <input type="text" name="Category" class="form-control">
+                    
+                    <label for="">Semester</label>
+                    <input type="text" name="Semester" class="form-control">
+                    
+                    <label for="">year</label>
+                    <input type="text" name="Year" class="form-control">
+
+                    <label for="">Question Paper</label>
+                    <input type="file"  name="Pdf" class="form-control">
+
+                    <button class="btn btn-success mt-4">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</section>

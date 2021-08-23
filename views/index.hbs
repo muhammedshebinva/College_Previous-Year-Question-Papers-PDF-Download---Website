@@ -14,32 +14,14 @@
                 <div class="col-md-12 mt-2">
                     <ul class="">
                         <h4> UG PROGRAMS </h4>
-
+                        {{#each ugPrograms}}
                         <li><i class="fa fa-angle-right"></i><a href="#"
-                                class="list-group-item list-group-item-action">BA English</a></li>
-                        <li><i class="fa fa-angle-right"></i><a href="#"
-                                class="list-group-item list-group-item-action">BSc Mathematics</a></li>
-                        <li><i class="fa fa-angle-right"></i><a href="#"
-                                class="list-group-item list-group-item-action">B Com Finance</a></li>
-                        <li><i class="fa fa-angle-right"></i><a href="#"
-                                class="list-group-item list-group-item-action">B Com Computer Application</a></li>
-                        <li><i class="fa fa-angle-right"></i><a href="#"
-                                class="list-group-item list-group-item-action">BSc Computer Science</a></li>
-                        <li><i class="fa fa-angle-right"></i><a href="#"
-                                class="list-group-item list-group-item-action">BSc Psychology with Training and
-                                Counselling </a></li>
-                        <li><i class="fa fa-angle-right"></i><a href="#"
-                                class="list-group-item list-group-item-action">BCA with AI and Robotics</a></li>
-                        <li><i class="fa fa-angle-right"></i><a href="#"
-                                class="list-group-item list-group-item-action">BBA International Business with Digital
-                                Marketing and Data Analysis </a></li>
-                        <li><i class="fa fa-angle-right"></i><a href="#"
-                                class="list-group-item list-group-item-action">B Com Professional Accounting with
-                                Taxation and Data Analysis</a></li>
+                                class="list-group-item list-group-item-action">{{this.name}}</a></li>
+                        {{/each}}
                         <br><br>
                         <h4> PG PROGRAMS </h4>
 
-                        {{#each pgPrograms}}
+                        {{#each files}}
                         <li><i class="fa fa-angle-right"></i><a href="#" class="list-group-item list-group-item-action">
                                 {{this.name}} </a></li>
                         

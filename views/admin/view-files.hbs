@@ -1,0 +1,36 @@
+<section>
+  <div class="container">
+    <div class="row mt-4">
+      <a href="/admin/add-file" style="width: 10rem; margin-left: auto;" class="btn btn-success ">Add File</a>
+    </div>
+  </div>
+    <div class="container">
+        <table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">PG</th>
+      <th scope="col">Course</th>
+      <th scope="col">Sem</th>
+       <th scope="col">Year</th>
+      <th scope="col">Question paper</th>
+    </tr>
+  </thead>
+  <tbody>
+      {{#each files}}
+    <tr>
+      <th scope="row">></th>
+      <td>{{this.Name}}</td>
+      <td>{{this.Semester}}</td>
+      <td>{{this.Year}}</td>
+       <td><a href="/file-pdf/{{this._id}}.pdf"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
+       
+    </tr>
+    {{/each}}
+   
+  </tbody>
+  
+</table>
+
+
+    </div>
+</section>
