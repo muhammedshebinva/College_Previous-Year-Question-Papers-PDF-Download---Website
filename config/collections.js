@@ -1,3 +1,4 @@
 module.exports={
-    FILE_COLLECTION:'file'
+    FILE_COLLECTION:'file',
+    USER_COLLECTION:'user'
 }

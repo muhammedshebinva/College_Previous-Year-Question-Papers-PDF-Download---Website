@@ -10,6 +10,7 @@ var hbs=require('express-handlebars');
 var app = express();
 var fileUpload = require('express-fileupload');
 var db=require('./config/connection');
+var session=require('express-session');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -20,7 +21,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
+app.use(session({secret:"key",coockie:{maxAge:600000}}))
 db.connect((err)=>{
   if(err) console.log( "connection Error"+err);
   else console.log("Database connected to port 27017");

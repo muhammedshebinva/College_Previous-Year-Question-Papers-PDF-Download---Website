@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var fileHelpers=require('../helpers/file-helpers')
+var fileHelpers=require('../helpers/file-helpers');
 /* GET users listing. */
 router.get('/', function(req, res, next) {
   
