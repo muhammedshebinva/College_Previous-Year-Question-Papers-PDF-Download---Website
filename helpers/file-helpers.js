@@ -24,6 +24,27 @@ module.exports={
                 resolve(response)
             })
         })
+    },
+    getFileDetails:(fileId)=>{
+        return new Promise((resolve,reject)=>{
+            db.get().collection(collection.FILE_COLLECTION).findOne({_id:objectId(fileId)}).then((file)=>{
+                resolve(file)
+            })
+        })
+    },
+    updateFile:(fileId,fileDetails)=>{
+        return new Promise((resolve,reject)=>{
+            db.get().collection(collection.FILE_COLLECTION)
+            .updateOne({_id:objectId(fileId)},{
+                $set:{
+                    Name:fileDetails.Name,
+                    Category:fileDetails.Category,
+                    Year:fileDetails.Year 
+                }
+            }).then((responce)=>{
+                resolve()
+            })
+        })
     }
 
 }
