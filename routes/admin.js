@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var fileHelpers=require('../helpers/file-helpers');
+
 /* GET users listing. */
 router.get('/', function(req, res, next) {
   
@@ -65,6 +66,14 @@ router.post('/add-file',(req,res)=>{
       }
     })
     
+  })
+})
+
+router.get('/delete-file/:id',(req,res)=>{
+  let fileId=req.params.id
+  
+  fileHelpers.deleteFile(fileId).then((response)=>{
+    res.redirect('/admin/')
   })
 })
 

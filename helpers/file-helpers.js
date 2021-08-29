@@ -1,5 +1,6 @@
 var db=require('../config/connection')
 var collection=require('../config/collections')
+var objectId=require('mongodb').ObjectId
 
 module.exports={
 
@@ -15,5 +16,14 @@ module.exports={
             let files=await db.get().collection(collection.FILE_COLLECTION).find().toArray()
             resolve(files)
         })
+    },
+    deleteFile:(fileId)=>{
+        return new Promise((resolve,reject)=>{
+            db.get().collection(collection.FILE_COLLECTION).deleteOne({_id:objectId(fileId)}).then((response)=>{
+                //console.log(response);
+                resolve(response)
+            })
+        })
     }
+
 }
