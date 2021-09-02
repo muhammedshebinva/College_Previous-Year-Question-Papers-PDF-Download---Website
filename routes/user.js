@@ -53,8 +53,16 @@ router.get('/logout',(req,res)=>{
   req.session.destroy()
   res.redirect('/')
 })
-router.get('/download',verifyLogin,(req,res)=>{
-  res.render('user/download')
+router.get('/download/:id',verifyLogin,async(req,res)=>{
+  let file=await fileHelpers.getFileDetails(req.params.id)
+  let user=req.session.user
+  res.render('user/download',{file,user})
+})
+
+router.get('/sem-select/:id',verifyLogin,async(req,res)=>{
+  let file=await fileHelpers.getFileDetails(req.params.id)
+  let user=req.session.user
+  res.render('user/sem-select',{file,user})
 })
 
 

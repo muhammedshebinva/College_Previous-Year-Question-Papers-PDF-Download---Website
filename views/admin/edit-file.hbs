@@ -8,32 +8,52 @@
                     <label for="">Course</label>
                     <input type="text" name="Name" class="form-control" value="{{file.Name}}">
                     
-                    <label for="">UG or PG</label>
-                    <input type="text" name="Category" class="form-control" value="{{file.Category}}">
+                    
+
+      <label for="sem">Semester</label>
+  <select id="sem" name="Sem" style="width: 100%;" class="form-control">
+     <option value="{{file.Sem}}">{{file.Sem}}</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+  </select>
+    
                     
                    
                     
                     <label for="">year</label>
                     <input type="text" name="Year" class="form-control" value="{{file.Year}}">
+                    
+                    <label for="">Question Papers</label><br>
+                    
+                    <label for="">Subject 1</label><br>
+                    <td><a href="/file-pdf/{{file._id}}sub1.pdf" id="pdfView"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
+                    <input type="file"  name="Pdf_sub1" class="form-control" onchange="viewPdf(event)"><br>
 
-                    <label for="">Question Paper 1st Semester</label><br>
-                    <td><a href="/file-pdf/{{file._id}}sem1.pdf" id="pdfView"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
-                    <input type="file"  name="Pdf_sem1" class="form-control" onchange="viewPdf(event)"><br>
-                    <label for="">Question Paper 2nd Semester</label><br>
-                        <td><a href="/file-pdf/{{file._id}}sem2.pdf"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
-                     <input type="file"  name="Pdf_sem2" class="form-control"><br>
-                     <label for="">Question Paper 3rd Semester</label><br>
-                         <td><a href="/file-pdf/{{file._id}}sem3.pdf"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>   
-                      <input type="file"  name="Pdf_sem3" class="form-control"><br>
-                      <label for="">Question Paper 4th Semester</label><br>
-                        <td><a href="/file-pdf/{{file._id}}sem4.pdf"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
-                       <input type="file"  name="Pdf_sem4" class="form-control"><br>
-                       <label for="">Question Paper 5th Semester</label><br>
-                            <td><a href="/file-pdf/{{file._id}}sem5.pdf"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
-                        <input type="file"  name="Pdf_sem5" class="form-control"><br>
-                        <label for="">Question Paper 6th Semester</label><br>
-                            <td><a href="/file-pdf/{{file._id}}sem6.pdf"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
-                        <input type="file"  name="Pdf_sem6" class="form-control"><br>
+                    <label for="">Subject 2</label><br>
+                    <td><a href="/file-pdf/{{file._id}}sub2.pdf" id="pdfView"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
+                    <input type="file"  name="Pdf_sub2" class="form-control" onchange="viewPdf(event)"><br>
+
+                    <label for="">Subject 3</label><br>
+                    <td><a href="/file-pdf/{{file._id}}sub3.pdf" id="pdfView"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
+                    <input type="file"  name="Pdf_sub3" class="form-control" onchange="viewPdf(event)"><br>
+
+                    <label for="">Subject 4</label><br>
+                    <td><a href="/file-pdf/{{file._id}}sub4.pdf" id="pdfView"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
+                    <input type="file"  name="Pdf_sub4" class="form-control" onchange="viewPdf(event)"><br>
+
+                    <label for="">Subject 5</label><br>
+                    <td><a href="/file-pdf/{{file._id}}sub5.pdf" id="pdfView"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
+                    <input type="file"  name="Pdf_sub5" class="form-control" onchange="viewPdf(event)"><br>
+
+                    <label for="">Subject 6</label><br>
+                    <td><a href="/file-pdf/{{file._id}}sub6.pdf" id="pdfView"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
+                    <input type="file"  name="Pdf_sub6" class="form-control" onchange="viewPdf(event)"><br>
+
+                    
 
                     <button class="btn btn-success mt-4">Submit</button>
                 </form>

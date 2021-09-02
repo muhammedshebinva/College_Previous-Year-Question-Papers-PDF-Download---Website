@@ -14,13 +14,24 @@
                 <div class="col-md-12 mt-2">
                     <ul class="">
                         
-                        <h4> UG PROGRAMS </h4>
+                        
+                       <h2>Courses</h2>
+                       
+
+                        {{!-- {{#each files}}
+                        <li><i class="fa fa-angle-right"></i><a href="/download/{{this._id}}" class="list-group-item list-group-item-action">
+                                {{this.Name}} </a></li>
+
+                        {{/each}} --}}
 
                         {{#each files}}
-                        <li><i class="fa fa-angle-right"></i><a href="/download" class="list-group-item list-group-item-action">
+                        <li><i class="fa fa-angle-right"></i><a href="/sem-select/{{this._id}}" class="list-group-item list-group-item-action">
                                 {{this.Name}} </a></li>
-                        
+
                         {{/each}}
+                        
+
+
                     </ul>
                 </div>
             </div>
