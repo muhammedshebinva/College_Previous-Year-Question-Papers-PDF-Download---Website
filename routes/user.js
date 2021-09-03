@@ -1,5 +1,8 @@
 var express = require('express');
 var router = express.Router();
+const session = require('express-session');
+const { render } = require('../app');
+
 var fileHelpers=require('../helpers/file-helpers');
 const userHelpers=require('../helpers/user-helpers')
 
@@ -64,6 +67,10 @@ router.get('/sem-select/:id',verifyLogin,async(req,res)=>{
   let user=req.session.user
   res.render('user/sem-select',{file,user})
 })
+
+
+
+
 
 
 module.exports = router;

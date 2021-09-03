@@ -29,6 +29,7 @@ db.connect((err)=>{
 });
 app.use(fileUpload());
 app.use('/', userRouter);
+app.use('/sem-select', userRouter);
 app.use('/admin', adminRouter);
 
 // catch 404 and forward to error handler
