@@ -1,45 +1,231 @@
 
-<div class="div">
+
+    {{!-- new/////////////////////////////////////////// --}}
     
-</div>
-    <section>
-        <div class="container col-md-12 mt-5 ">
-            <div class="row mt-5">
-                <p class="line-1 anim-typewriter text">
-                    Download Previous Year <br> Question Paper</p>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 mt-2">
-                    <ul class="">
-                        
-                        
-                       <h2>Courses</h2>
-                       
+   <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <img src="assets/img/home1.jpg" alt="" class="home__img">
 
-                        {{!-- {{#each files}}
-                        <li><i class="fa fa-angle-right"></i><a href="/download/{{this._id}}" class="list-group-item list-group-item-action">
-                                {{this.Name}} </a></li>
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <span class="home__data-subtitle">Welcome to</span>
+                        <h1 class="home__data-title">Nilgiri <br> College of<b> Arts & <br> Science</b></h1>
+                        <a href="#" class="button">Explore</a>
 
-                        {{/each}} --}}
+                    </div>
 
-                        {{#each files}}
-                        <li><i class="fa fa-angle-right"></i><a href="/sem-select/{{this._id}}" class="list-group-item list-group-item-action">
-                                {{this.Name}} </a></li>
+                    <div class="home__social">
+                        <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                            <i class="ri-facebook-box-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                    </div>
 
-                        {{/each}}
-                        
+                    <div class="home__info">
+                        <div>
+                            
+                            <a href="#select-course" class="home__info-title" style="color: #fff;">
+                                Download Previous Year Question Papers <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
 
-
-                    </ul>
+                        <div class="home__info-overlay">
+                            <img  src="assets/img/exam-paper.jpg" alt="" class="home__info-img">
+                        </div>
+                    </div>
                 </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <div class="about__container container grid">
+                    <div class="about__data">
+                        <h2 class="section__title about__title">More Information <br> About The Web Site</h2>
+                        <p class="about__description">This Website is for NCAS Students to Download Previos Year Question Papers.
+                        </p>
+                        
+                    </div>
+
+                    <div class="about__img">
+                        <div class="about__img-overlay">
+                            <img src="assets/img/about1.jpg" alt="" class="about__img-one">
+                        </div>
+
+                        <div class="about__img-overlay">
+                            <img src="assets/img/about2.jpg" alt="" class="about__img-two">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!--==================== select course ====================-->
+            <section class="select-course" id="select-course">
+                <h2 class="section__title">Download Previous Year<br> Quetion Papers</h2>
+                <div class="discover__container mt-5">
+                    <div class="row text-center">
+                      <div class="col-md-12">
+                        <h2>SELECT YOUR COURSE</h2>
+                        <hr class="hrLine">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container">
+                    <div class="tabbed">
+                    <div class="content">
+                      
+                        <ul class="flex-container">
+                            {{#each files}}
+                            <a href="/sem-select/{{this._id}}" id="aTag"><li class="flex-item">{{this.Name}}</li></a>
+                            {{/each}}
+                             {{!-- <a href="" id="aTag"><li class="flex-item">Semester 2</li></a>
+                            <a href="" id="aTag"><li class="flex-item">Semester 3</li></a>
+                            <a href="" id="aTag"> <li class="flex-item">Semester 4</li></a>
+                            <a href="" id="aTag"><li class="flex-item">Semester 5</li></a>
+                            <a href="" id="aTag"> <li class="flex-item">Semester 6</li></a> --}}
+                           
+                           </ul>
+                    </div>
+                  </div>
+                  </div>
+
+            </section>
+            
+            <!--==================== DISCOVER ====================-->
+            <section class="discover section" id="discover">
+                <h2 class="section__title">Discover the most <br> attractive places</h2>
+                
+                <div class="discover__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!--==================== DISCOVER 1 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/discover1.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Bali</h2>
+                                <span class="discover__description">24 tours available</span>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 2 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/discover2.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Hawaii</h2>
+                                <span class="discover__description">15 tours available</span>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 3 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/discover3.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Hvar</h2>
+                                <span class="discover__description">18 tours available</span>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 4 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/discover4.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Whitehaven</h2>
+                                <span class="discover__description">32 tours available</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+
+            
+
+            
+
+            
+                        <!-- Contact -->
+<section class="contact py-5" id="contact">
+	<div class="container py-lg-5">
+		
+		<h3 class="heading mb-sm-5 mb-4">Contact</h3>
+		<div class="contact-form">
+			<div class="row">
+				<div class="col-lg-8">
+				<div class="col-lg-7 my-lg-0 my-4">
+				<p><span class="fa mr-2 fa-map-marker" style="margin-right: 1em;"></span> Thaloor, Konnachal P.O <br>    The Nilgiris,Tamil Nadu- 643239.</p>
+				<p class="mt-2"><span class="fa mr-2 fa-envelope " style="margin-right: 1em;"></span><a href="mailto:ncasbu@gmail.com">ncasbu@gmail.com</a><br> 
+                
+                <span class="fa ml-3 mr-2 fa-phone" style="margin-right: 1em;"></span> +91 9207 769 999, +91 9488 186 999</p>
+                
             </div>
-        </div>
-    </section>
+			</div>
+				<section class="w3layouts-map col-lg-4 mt-lg-0 mt-5">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31269.099233335906!2d76.25303442064862!3d11.577830573960323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa3a6deb27cc52a25!2sNilgiri+College+of+Arts+and+Science!5e0!3m2!1sen!2sin!4v1494312931741" allowfullscreen=""></iframe>
+				</section>
+			
+	
+	</div>
+</section>
+<!-- //Contact -->		
+                   
+            </section>
+            
+            
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content grid">
+                    
+                            <a href="https://www.facebook.com/" target="_blank" class="footer__social">
+                                <i class="ri-facebook-box-fill"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank" class="footer__social">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                            <a href="https://www.youtube.com/" target="_blank" class="footer__social">
+                                <i class="ri-youtube-fill"></i>
+                            </a>
+                        </div>
+                    </div>
     
+                   
+    
+    
+                   
+                </div>
+
+               
+            </div>
+        </footer>
+
+         <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line scrollup__icon"></i>
+        </a>
+       
+
+<!--=============== SCROLL REVEAL===============-->
+        <script src="/assets/js/scrollreveal.min.js"></script>
+        
+        <!--=============== SWIPER JS ===============-->
+        <script src="/assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="/assets/js/main.js"></script>
+
+        <script src="https://kit.fontawesome.com/fbb1eebebd.js" crossorigin="anonymous"></script>
+
+        
     
 
 
