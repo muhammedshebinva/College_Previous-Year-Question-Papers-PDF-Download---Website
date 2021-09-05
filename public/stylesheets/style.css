@@ -4,12 +4,17 @@
 /* Global */
 
 body{
-  height: calc(100vh - 8em);
-
+  /* height: calc(100vh - 8em);
+  margin: 0; */
  
-  /* font-family: 'Anonymous Pro', monospace;   */
+  font-family: 'Anonymous Pro', monospace;  
+  overflow-x: hidden;
+  margin: 0%;
   
 }
+
+
+
 .text{
   
   font-weight: normal;

@@ -56,17 +56,45 @@ router.get('/logout',(req,res)=>{
   req.session.destroy()
   res.redirect('/')
 })
-router.get('/download/:id',verifyLogin,async(req,res)=>{
-  let file=await fileHelpers.getFileDetails(req.params.id)
-  let user=req.session.user
-  res.render('user/download',{file,user})
-})
+
 
 router.get('/sem-select/:id',verifyLogin,async(req,res)=>{
   let file=await fileHelpers.getFileDetails(req.params.id)
   let user=req.session.user
   res.render('user/sem-select',{file,user})
 })
+
+router.get('/download/:id',async(req,res)=>{
+  let file=await fileHelpers.getFileDetails(req.params.id)
+  let user=req.session.user
+  res.render('user/download',{file,user})
+})
+router.get('/downloadSem2/:id',async(req,res)=>{
+  let file=await fileHelpers.getFileDetails(req.params.id)
+  let user=req.session.user
+  res.render('user/downloadSem2',{file,user})
+})
+router.get('/downloadSem3/:id',async(req,res)=>{
+  let file=await fileHelpers.getFileDetails(req.params.id)
+  let user=req.session.user
+  res.render('user/downloadSem3',{file,user})
+})
+router.get('/downloadSem4/:id',async(req,res)=>{
+  let file=await fileHelpers.getFileDetails(req.params.id)
+  let user=req.session.user
+  res.render('user/downloadSem4',{file,user})
+})
+router.get('/downloadSem5/:id',async(req,res)=>{
+  let file=await fileHelpers.getFileDetails(req.params.id)
+  let user=req.session.user
+  res.render('user/downloadSem5',{file,user})
+})
+router.get('/downloadSem6/:id',async(req,res)=>{
+  let file=await fileHelpers.getFileDetails(req.params.id)
+  let user=req.session.user
+  res.render('user/downloadSem6',{file,user})
+})
+
 
 
 

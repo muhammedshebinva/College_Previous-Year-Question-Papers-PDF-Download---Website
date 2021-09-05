@@ -177,8 +177,8 @@ input {
 
 .container {
   max-width: 968px;
-  margin-left: var(--mb-1);
-  margin-right: var(--mb-1);
+  /* margin-left: var(--mb-1);
+  margin-right: var(--mb-1); */
 }
 
 .grid {
@@ -1159,6 +1159,8 @@ input {
     border: 4px solid #eee;
 }
 
+
+
 /*-- //contact --*/
 
 
@@ -1172,10 +1174,13 @@ input {
 
 /* For tall screens on mobiles y desktop*/
 @media screen and (min-height: 721px) {
-  body {
+  /* body {
     margin: 0;
-  }
+  } */
   .home__container, .home__img {
     height: 640px;
   }
 }
+
+
+
