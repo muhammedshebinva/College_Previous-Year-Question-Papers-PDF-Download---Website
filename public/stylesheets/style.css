@@ -129,5 +129,20 @@ body{
     
 }
 
+/* login page */
+.container-img {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centered {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  width: 100%;
+  padding-top: 11em;
+}
+/* /login page */
+
 
 

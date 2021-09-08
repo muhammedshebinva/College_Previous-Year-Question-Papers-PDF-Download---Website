@@ -4,8 +4,8 @@
 <div class="row">
   <div class="col-md-6 m-auto">
     <div class="container mt-5">
-      <h2>Login</h2>
-      <form action="/login" method="POST">
+      <h2>Admin Login</h2>
+      <form action="/admin/adminLogin" method="POST">
     {{#if loginErr}}
       <p class="error">{{loginErr}}</p>
     {{/if}}
@@ -19,7 +19,7 @@
     <input type="password" class="form-control" name="Password" placeholder="Password">
   </div><br>
   
-  <a href="/signup" style="color: blue; font-weight: bold; margin-right: auto;" >create new Account?</a>
+  
   <button type="submit" class="btn btn-primary float-right" style="margin: auto;">Login</button>
   
 </form>

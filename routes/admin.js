@@ -1,15 +1,65 @@
 var express = require('express');
 var router = express.Router();
-var fileHelpers=require('../helpers/file-helpers');
+const session = require('express-session');
 
+const { render, response } = require('../app');
+var fileHelpers=require('../helpers/file-helpers');
+var adminHelpers=require('../helpers/admin-helpers')
 /* GET users listing. */
+
+
+
 router.get('/', function(req, res, next) {
-  
+  let admindata=req.session.admin
+  console.log(admindata);
   fileHelpers.getAllFiles().then((files)=>{
-    res.render('admin/view-files',{admin:true,files})
+    res.render('admin/view-files',{files,admin:true,admindata})
   })
   
 });
+
+///////////////////////
+
+router.get('/admin-page',function(req,res){
+  fileHelpers.getAllFiles().then((files)=>{
+    res.render('admin/admin-page',{admin:true})
+  })
+})
+////////////////////////
+
+///******login signup*******/////
+
+router.get('/adminLogin',(req,res)=>{
+  res.render('admin/adminLogin')
+})
+
+router.get('/adminSignup',(req,res)=>{
+  res.render('admin/adminSignup')
+})
+router.post('/adminSignup',(req,res)=>{
+  adminHelpers.doadminSignup(req.body).then((response)=>{
+    console.log(response);
+  })
+})
+router.post('/adminLogin',(req,res)=>{
+  adminHelpers.doadminLogin(req.body).then((response)=>{
+    if(response.loginStatus){
+      req.session.loggedin=true
+      req.session.admin=response.admin
+      res.redirect('/admin')
+    }else{
+      res.redirect('/adminLogin')
+    }
+  })
+})
+router.get('/adminLogout',(req,res)=>{
+  req.session.destroy()
+  res.redirect("/admin")
+})
+//*******/login signup********//
+
+
+
 router.get('/add-file',function(req,res){
   res.render('admin/add-file',{admin:true})
 })
