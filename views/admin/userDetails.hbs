@@ -1,1 +1,35 @@
-<h2>hello</h2>
+
+
+<section>
+    <div class="container">
+        <div class="row">
+            <h2>USER DETAILTS</h2>
+            <div>
+                <table class="table mt-5">
+  <thead class="table-dark">
+    <tr>
+      <th scope="col">S.No</th>
+      <th scope="col">Name</th>
+      <th scope="col">Cource</th>
+      <th scope="col">Email</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+     {{#each users}}
+    <tr>
+      <th scope="row">1</th>
+      <td>{{this.Name}}</td>
+      <td>{{this.cource}}</td>
+      <td>{{this.Email}}</td>
+     
+    </tr>
+   
+    {{/each}}
+    
+  </tbody>
+</table>
+            </div>
+        </div>
+    </div>
+</section>

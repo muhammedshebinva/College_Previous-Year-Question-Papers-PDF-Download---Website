@@ -4,7 +4,8 @@ const session = require('express-session');
 
 const { render, response } = require('../app');
 var fileHelpers=require('../helpers/file-helpers');
-var adminHelpers=require('../helpers/admin-helpers')
+var adminHelpers=require('../helpers/admin-helpers');
+var userHelpers=require('../helpers/user-helpers');
 
 const verifyAdminLogin=(req,res,next)=>{
   if(req.session.loggedin){
@@ -76,9 +77,12 @@ router.get('/adminLogout',(req,res)=>{
 //*******/login signup********//
 
 //************user Details page */////
-router.get('/userDetails',(req,res)=>{
+router.get('/userDetails',(req,res,next)=>{
   let admindata=req.session.admin
-  res.render('admin/userDetails',{admin:true,admindata})
+  userHelpers.getAllUsers().then((users)=>{
+    res.render('admin/userDetails',{users, admin:true,admindata})
+  })
+  
   
 })
 //************/user Details page *////
