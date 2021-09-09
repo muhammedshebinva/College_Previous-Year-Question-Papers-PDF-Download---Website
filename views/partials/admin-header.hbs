@@ -14,6 +14,11 @@
                         <li class="nav-item">
                             <a class="nav-link active" href="#">About</a>
                         </li>
+                        {{#if admindata}}
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/admin/userDetails">users</a>
+                        </li>
+                        {{/if}}
                         <li class="nav-item">
                             <a class="nav-link active" href="#">Contact</a>
                         </li>

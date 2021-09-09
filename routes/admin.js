@@ -5,6 +5,14 @@ const session = require('express-session');
 const { render, response } = require('../app');
 var fileHelpers=require('../helpers/file-helpers');
 var adminHelpers=require('../helpers/admin-helpers')
+
+const verifyAdminLogin=(req,res,next)=>{
+  if(req.session.loggedin){
+    next()
+  }else{
+    res.redirect('/admin/adminLogin')
+  }
+}
 /* GET users listing. */
 
 
@@ -22,7 +30,7 @@ router.get('/', function(req, res, next) {
 
 router.get('/admin-page',function(req,res){
   fileHelpers.getAllFiles().then((files)=>{
-    res.render('admin/admin-page',{admin:true})
+    res.render('admin/admin-page',{admin})
   })
 })
 ////////////////////////
@@ -30,11 +38,19 @@ router.get('/admin-page',function(req,res){
 ///******login signup*******/////
 
 router.get('/adminLogin',(req,res)=>{
-  res.render('admin/adminLogin')
+  let admindata=req.session.admin
+  if(req.session.loggedin){
+    res.redirect('/admin')
+  }else{
+
+    res.render('admin/adminLogin',{"loginErr":req.session.loginErr,admin:true,admindata})
+    loginErr=false
+  }
+  
 })
 
-router.get('/adminSignup',(req,res)=>{
-  res.render('admin/adminSignup')
+router.get('/adminSignup',verifyAdminLogin,(req,res)=>{
+  res.render('admin/adminSignup',{admin:true,admindata})
 })
 router.post('/adminSignup',(req,res)=>{
   adminHelpers.doadminSignup(req.body).then((response)=>{
@@ -48,7 +64,8 @@ router.post('/adminLogin',(req,res)=>{
       req.session.admin=response.admin
       res.redirect('/admin')
     }else{
-      res.redirect('/adminLogin')
+      req.session.loginErr="Invalid username or Password"
+      res.redirect('/admin/adminLogin',{admin:true})
     }
   })
 })
@@ -58,10 +75,18 @@ router.get('/adminLogout',(req,res)=>{
 })
 //*******/login signup********//
 
+//************user Details page */////
+router.get('/userDetails',(req,res)=>{
+  let admindata=req.session.admin
+  res.render('admin/userDetails',{admin:true,admindata})
+  
+})
+//************/user Details page *////
 
 
-router.get('/add-file',function(req,res){
-  res.render('admin/add-file',{admin:true})
+router.get('/add-file',verifyAdminLogin,function(req,res){
+  let admindata=req.session.admin
+  res.render('admin/add-file',{admin:true,admindata})
 })
 router.post('/add-file',(req,res)=>{
  
@@ -384,17 +409,18 @@ router.post('/add-file',(req,res)=>{
   })
 })
 
-router.get('/delete-file/:id',(req,res)=>{
+router.get('/delete-file/:id',verifyAdminLogin,(req,res)=>{
   let fileId=req.params.id
   
   fileHelpers.deleteFile(fileId).then((response)=>{
     res.redirect('/admin/')
   })
 })
-router.get('/edit-file/:id',async (req,res)=>{
+router.get('/edit-file/:id',verifyAdminLogin,async (req,res)=>{
   let file=await fileHelpers.getFileDetails(req.params.id)
+  let admindata=req.session.admin
   console.log(file);
-  res.render('admin/edit-file',{file,admin:true})
+  res.render('admin/edit-file',{file,admin:true,admindata})
 })
 router.post('/edit-file/:id',(req,res)=>{
   let id=req.params.id
@@ -426,4 +452,6 @@ router.post('/edit-file/:id',(req,res)=>{
     }
   })
 })
+
+
 module.exports = router;
