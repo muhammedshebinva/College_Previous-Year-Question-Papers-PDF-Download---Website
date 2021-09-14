@@ -61,7 +61,7 @@ router.get('/logout',(req,res)=>{
 router.get('/sem-select/:id',verifyLogin,async(req,res)=>{
   let file=await fileHelpers.getFileDetails(req.params.id)
   let user=req.session.user
-  res.render('user/sem-select',{file,user})
+  res.render('user/sem-select',{file,user:true,user})
 })
 
 router.get('/download/:id',async(req,res)=>{
