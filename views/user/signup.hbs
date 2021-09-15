@@ -1,4 +1,6 @@
-<div class="row">
+{{!-- <main class="main">
+  
+<div class="">
   <div class="col-md-6 m-auto">
     <div class="container mt-5 pl-5">
       <h2>Create new Account</h2>
@@ -36,3 +38,59 @@
 
   </div>
 </div>
+</main> --}}
+
+<main class="main">
+  <body style="background:rebeccapurple" class="">
+  <section class="">
+    <div class="col-sm-12 col-md-12 m-auto ">
+    <div class="login-box">
+        <h2>Create new Account</h2>
+        <form action="/signup" method="post">
+         
+          <div class="user-box">
+            <input type="text" name="Name" required="">
+            <label>Name</label>
+          </div>
+          <div class="user-box">
+            
+  <select id="course" name="cource" style="width: 100%; color: #fff;" class="form-control">
+    <option value="BA English">BA English</option>
+    <option value="B Com Finance">B Com Finance</option>
+    <option value="BSc Mathematics">BSc Mathematics</option>
+    <option value="B Com Computer Application">B Com Computer Application</option>
+    <option value="BSc Computer Science">BSc Computer Science</option>
+    <option value="BCA with AI and Robotics">BCA with AI and Robotics</option>
+    <option value="BSc Psychology with Training and Counselling">BSc Psychology with Training and Counselling</option>
+    <option value="B Com Professional Accounting with Taxation and Data Analysis">B Com Professional Accounting with Taxation and Data Analysis</option>
+    <option value="BBA International Business with Digital Marketing and Data Analysis">BBA International Business with Digital Marketing and Data Analysis</option>
+    
+  </select>
+  
+          </div><br>
+           <div class="user-box">
+            <input type="email" name="Email" required="">
+            <label>Email</label>
+          </div>
+          <div class="user-box">
+            <input type="password" name="Password" required="">
+            <label>Password</label>
+          </div>
+          <a href="#"  >
+            
+            <span></span>
+            <span></span>
+            
+            <button type="submit" class="btn bg-transparent" style="color: #fff;" >Signup</button>
+          </a>
+        </form>
+        <br>
+        <a href="/login" style="color: rgb(255, 255, 255); font-weight: bold; margin-right: auto;" >Already have Account?</a>
+      </div>
+
+
+
+</div>
+</section>
+</body>
+</main>

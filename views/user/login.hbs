@@ -1,5 +1,5 @@
 <main class="main">
-<section class="" >
+{{!-- <section class="" >
   <img src="assets/img/home1.jpg" alt="" style="height: 100%;" class="home__img">
 <div class=" home__container container grid">
   <div class="col-md-6 m-auto">
@@ -28,12 +28,44 @@
 
   </div>
 </div>
+</section> --}}
+
+{{!-- new design --}}
+
+  <body style="background: rebeccapurple;" class="">
+  <section>
+    <div class="col-md-6 m-auto">
+    <div class="login-box container">
+        <h2>Login</h2>
+        <form action="/login" method="POST">
+          {{#if loginErr}}
+          <p class="error" style="color: rgb(255, 0, 0);">{{loginErr}}</p>
+          {{/if}}
+          <div class="user-box">
+            <input type="email" name="Email" required="">
+            <label>Email</label>
+          </div>
+          <div class="user-box">
+            <input type="password" name="Password" required="">
+            <label>Password</label>
+          </div>
+          <a href="#"  >
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            
+            <button type="submit" class="btn bg-transparent" style="color: #fff;" >Login</button>
+          </a>
+        </form>
+        <br><br>
+        <a href="/signup" style="color: rgb(255, 255, 255); font-weight: bold; margin-right: auto;" >create new Account?</a>
+      </div>
+
+
+{{!-- new design --}}
+</div>
 </section>
-
-{{!-- new design --}}
-
-  
-
-{{!-- new design --}}
+</body>
 </main>
 
