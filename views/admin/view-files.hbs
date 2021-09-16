@@ -1,9 +1,6 @@
-{{!-- <section>
-  <div class="container">
-      <button><a href="/admin/admin-page">Admin Page</a></button>
-  </div>
-</section> --}}
 
+
+{{#if admindata}}
 <section class="col-md-12">
   <div class="container">
     <div class="row mt-4">
@@ -642,3 +639,13 @@
 
     </div>
 </section>
+{{else}}
+<section>
+  <div class="container">
+     <h3 style="margin-top: 5em;">welcome To Admin page <br> Login to view more Options</h3>
+<br>
+      <a href="/admin/adminLogin" class="button">Login</a>
+     
+  </div>
+</section>
+{{/if}}
