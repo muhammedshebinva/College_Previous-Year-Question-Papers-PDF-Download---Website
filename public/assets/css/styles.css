@@ -378,6 +378,11 @@ input {
   transform: var(--img-scale);
 }
 
+.gotoDownload:hover{
+  background-color: var(--first-color-alt);
+  color: rgb(255, 255, 255);
+}
+
 /*=============== BUTTONS ===============*/
 .button {
   display: inline-block;
