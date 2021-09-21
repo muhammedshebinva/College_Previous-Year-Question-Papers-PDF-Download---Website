@@ -4,12 +4,12 @@
       <h2>Create new Admin Account</h2>
       <form action="/admin/adminSignup" method="POST" >
    <div class="form-group">
-    <label >Name</label>
+    <label class="SignUp_Label">Name</label>
     <input type="text" class="form-control" name="Name" placeholder="Enter Name">
   </div>
   
   <div class="form-group mt-2">
-    <label for="course">Department</label>
+    <label class="SignUp_Label" for="course">Department</label>
   <select id="department" name="Department" style="width: 100%;" class="form-control">
     <option value="Computer Science">Computer Secience</option>
     <option value="English">English</option>
@@ -19,16 +19,16 @@
   </div>
   
   <div class="form-group mt-2">
-    <label >Email address</label>
+    <label class="SignUp_Label" >Email address</label>
     <input type="email" class="form-control" name="Email" placeholder="Enter email">
   </div>
   <div class="form-group mt-2">
-    <label>Password</label>
+    <label class="SignUp_Label">Password</label>
     <input type="password" class="form-control" name="Password" placeholder="Password">
   </div>
   <br><br>
-  <a href="/login" style="color: blue; font-weight: bold;">Already have Account?</a>
-  <button type="submit" class="btn btn-primary float-right" style="float: right;">Signup</button>
+  
+  <button type="submit" class="btn btn-primary float-right" style="float: right;">Add Admin</button>
   
 </form>
 

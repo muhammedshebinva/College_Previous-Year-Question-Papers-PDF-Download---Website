@@ -1,3 +1,5 @@
+<body {{#if user.Name}}onload="showPopup('flex');" {{/if}}>
+    
 
 
     {{!-- new/////////////////////////////////////////// --}}
@@ -40,6 +42,24 @@
                         </div>
                     </div>
                 </div>
+
+                 <!--Popup Login Section -->
+        
+        <div id="bg-modal" > 
+
+            <div class="modal-contact col-md-6" >
+                
+                 <img src="assets/img/smaile.png" height= "193px" width= "203px">
+                
+                <p style="margin-top: 2em;"> Account Created Successfully </p>
+                
+                 <a href="#select-course" class="aPopUp" onclick= "showPopup('none');"> <button class="buttonpopupclose">Go To Download</button> </a>
+                
+                
+            </div>
+
+        </div>
+        
             </section>
 
 
@@ -195,7 +215,7 @@
             </div>
         </footer>
 
-        
+      </body>  
 
         
 

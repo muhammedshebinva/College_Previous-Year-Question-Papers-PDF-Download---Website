@@ -66,7 +66,7 @@ router.post('/adminLogin',(req,res)=>{
       res.redirect('/admin')
     }else{
       req.session.loginErr="Invalid username or Password"
-      res.redirect('/admin/adminLogin',{admin:true})
+      res.redirect('/admin/adminLogin')
     }
   })
 })
