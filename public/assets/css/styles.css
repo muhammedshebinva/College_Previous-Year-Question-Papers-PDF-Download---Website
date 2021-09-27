@@ -164,7 +164,8 @@ input {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
-  padding: 4.5rem 0 2.5rem;
+  /* padding: 4.5rem 0 2.5rem; */
+  padding: 0.5rem 0 2.5rem;
 }
 
 .section__title {

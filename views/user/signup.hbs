@@ -46,7 +46,7 @@
     <div class="col-sm-12 col-md-12 m-auto ">
     <div class="login-box">
         <h2>Create new Account</h2>
-        <form action="/signup" method="post">
+        <form action="/signup" method="post" id="signup-form">
          
           <div class="user-box">
             <input type="text" name="Name" required="">
@@ -75,9 +75,18 @@
             <label>Email</label>
           </div>
           <div class="user-box">
-            <input type="password" name="Password" required="">
+            <input type="password" name="Password" id="password-inp" required="">
             <label>Password</label>
+            
           </div>
+          <div>
+                        <div id="check-box" style="float: right; margin-right: 40%;     margin-top: 2px;">
+                            <input class="show-password" type="checkbox" onclick="showPassword()">
+                        </div>
+                        <div id="check-box-message" style="">
+                            <p style="color: aqua;">Show Password</p>
+                        </div>
+                        </div>
           <a href="#"  >
             
             <span></span>
@@ -95,4 +104,28 @@
 </div>
 </section>
 </body>
+<script>
+  function showPassword() {
+    var x = document.getElementById("password-inp");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+
+    
+  }
+  $(document).ready(function(){
+    $('#signup-form').validate({
+      rules:{
+        
+        Password:{
+          required:true,
+          minlength:6
+
+        }
+      }
+    })
+  })
+</script>
 </main>
