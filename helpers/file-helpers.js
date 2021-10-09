@@ -8,7 +8,7 @@ module.exports={
         console.log(file);
         db.get().collection('file').insertOne(file).then((data)=>{
             console.log(data);
-            console.log(file.Year);
+            
             callback(data.insertedId);
         })
     },
