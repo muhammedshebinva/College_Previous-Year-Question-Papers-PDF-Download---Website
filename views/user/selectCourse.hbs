@@ -1,0 +1,30 @@
+<section class="discover section" id="select-course">
+                <h2 class="section__title">Download Previous Year<br> Quetion Papers</h2>
+                <div class="discover__container mt-5">
+                    <div class="row text-center">
+                      <div class="col-md-12">
+                        <h2>SELECT YOUR COURSE</h2>
+                        <hr class="hrLine">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container ">
+                    <div class="tabbed">
+                    <div class="content">
+                      
+                        <ul class="flex-container">
+                            {{#each files}}
+                            <a href="/sem-select/{{this._id}}" id="aTag"><li class="flex-item">{{this.Name}}</li></a>
+                            {{/each}}
+                             {{!-- <a href="" id="aTag"><li class="flex-item">Semester 2</li></a>
+                            <a href="" id="aTag"><li class="flex-item">Semester 3</li></a>
+                            <a href="" id="aTag"> <li class="flex-item">Semester 4</li></a>
+                            <a href="" id="aTag"><li class="flex-item">Semester 5</li></a>
+                            <a href="" id="aTag"> <li class="flex-item">Semester 6</li></a> --}}
+                           
+                           </ul>
+                    </div>
+                  </div>
+                  </div>
+
+            </section>

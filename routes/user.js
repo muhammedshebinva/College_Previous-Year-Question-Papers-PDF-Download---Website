@@ -57,7 +57,15 @@ router.get('/logout',(req,res)=>{
   res.redirect('/')
 })
 
+//new
+router.get('/selectCourse/:Year', function(req, res, next) {
+  let user=req.session.user
+  fileHelpers.getAllFiles().then((files)=>{
+    res.render('user/selectCourse',{files,user})
+  })
+})
 
+//*new
 router.get('/sem-select/:id',verifyLogin,async(req,res)=>{
   let file=await fileHelpers.getFileDetails(req.params.id)
   let user=req.session.user
