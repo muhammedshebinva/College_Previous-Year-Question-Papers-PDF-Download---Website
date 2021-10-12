@@ -144,6 +144,49 @@ router.post('/add-file',(req,res)=>{
     let sem6pdf_sub5=req.files.Sem6Pdf_sub5
     let sem6pdf_sub6=req.files.Sem6Pdf_sub6
 
+     // year2
+     let Year2sem1pdf_sub1=req.files.Year2Sem1Pdf_sub1
+     let Year2sem1pdf_sub2=req.files.Year2Sem1Pdf_sub2
+     let Year2sem1pdf_sub3=req.files.Year2Sem1Pdf_sub3
+     let Year2sem1pdf_sub4=req.files.Year2Sem1Pdf_sub4
+     let Year2sem1pdf_sub5=req.files.Year2Sem1Pdf_sub5
+     let Year2sem1pdf_sub6=req.files.Year2Sem1Pdf_sub6
+ 
+     let Year2sem2pdf_sub1=req.files.Year2Sem2Pdf_sub1
+     let Year2sem2pdf_sub2=req.files.Year2Sem2Pdf_sub2
+     let Year2sem2pdf_sub3=req.files.Year2Sem2Pdf_sub3
+     let Year2sem2pdf_sub4=req.files.Year2Sem2Pdf_sub4
+     let Year2sem2pdf_sub5=req.files.Year2Sem2Pdf_sub5
+     let Year2sem2pdf_sub6=req.files.Year2Sem2Pdf_sub6
+ 
+     let Year2sem3pdf_sub1=req.files.Year2Sem3Pdf_sub1
+     let Year2sem3pdf_sub2=req.files.Year2Sem3Pdf_sub2
+     let Year2sem3pdf_sub3=req.files.Year2Sem3Pdf_sub3
+     let Year2sem3pdf_sub4=req.files.Year2Sem3Pdf_sub4
+     let Year2sem3pdf_sub5=req.files.Year2Sem3Pdf_sub5
+     let Year2sem3pdf_sub6=req.files.Year2Sem3Pdf_sub6
+ 
+     let Year2sem4pdf_sub1=req.files.Year2Sem4Pdf_sub1
+     let Year2sem4pdf_sub2=req.files.Year2Sem4Pdf_sub2
+     let Year2sem4pdf_sub3=req.files.Year2Sem4Pdf_sub3
+     let Year2sem4pdf_sub4=req.files.Year2Sem4Pdf_sub4
+     let Year2sem4pdf_sub5=req.files.Year2Sem4Pdf_sub5
+     let Year2sem4pdf_sub6=req.files.Year2Sem4Pdf_sub6
+ 
+     let Year2sem5pdf_sub1=req.files.Year2Sem5Pdf_sub1
+     let Year2sem5pdf_sub2=req.files.Year2Sem5Pdf_sub2
+     let Year2sem5pdf_sub3=req.files.Year2Sem5Pdf_sub3
+     let Year2sem5pdf_sub4=req.files.Year2Sem5Pdf_sub4
+     let Year2sem5pdf_sub5=req.files.Year2Sem5Pdf_sub5
+     let Year2sem5pdf_sub6=req.files.Year2Sem5Pdf_sub6
+ 
+     let Year2sem6pdf_sub1=req.files.Year2Sem6Pdf_sub1
+     let Year2sem6pdf_sub2=req.files.Year2Sem6Pdf_sub2
+     let Year2sem6pdf_sub3=req.files.Year2Sem6Pdf_sub3
+     let Year2sem6pdf_sub4=req.files.Year2Sem6Pdf_sub4
+     let Year2sem6pdf_sub5=req.files.Year2Sem6Pdf_sub5
+     let Year2sem6pdf_sub6=req.files.Year2Sem6Pdf_sub6
+
     //sem1
     sem1pdf_sub1.mv('./public/file-pdf/'+id+'sem1sub1'+'.pdf',(err)=>{
       if(!err){
@@ -409,47 +452,7 @@ router.post('/add-file',(req,res)=>{
     })
 
     // year2
-    let Year2sem1pdf_sub1=req.files.Year2Sem1Pdf_sub1
-    let Year2sem1pdf_sub2=req.files.Year2Sem1Pdf_sub2
-    let Year2sem1pdf_sub3=req.files.Year2Sem1Pdf_sub3
-    let Year2sem1pdf_sub4=req.files.Year2Sem1Pdf_sub4
-    let Year2sem1pdf_sub5=req.files.Year2Sem1Pdf_sub5
-    let Year2sem1pdf_sub6=req.files.Year2Sem1Pdf_sub6
-
-    let Year2sem2pdf_sub1=req.files.Year2Sem2Pdf_sub1
-    let Year2sem2pdf_sub2=req.files.Year2Sem2Pdf_sub2
-    let Year2sem2pdf_sub3=req.files.Year2Sem2Pdf_sub3
-    let Year2sem2pdf_sub4=req.files.Year2Sem2Pdf_sub4
-    let Year2sem2pdf_sub5=req.files.Year2Sem2Pdf_sub5
-    let Year2sem2pdf_sub6=req.files.Year2Sem2Pdf_sub6
-
-    let Year2sem3pdf_sub1=req.files.Year2Sem3Pdf_sub1
-    let Year2sem3pdf_sub2=req.files.Year2Sem3Pdf_sub2
-    let Year2sem3pdf_sub3=req.files.Year2Sem3Pdf_sub3
-    let Year2sem3pdf_sub4=req.files.Year2Sem3Pdf_sub4
-    let Year2sem3pdf_sub5=req.files.Year2Sem3Pdf_sub5
-    let Year2sem3pdf_sub6=req.files.Year2Sem3Pdf_sub6
-
-    let Year2sem4pdf_sub1=req.files.Year2Sem4Pdf_sub1
-    let Year2sem4pdf_sub2=req.files.Year2Sem4Pdf_sub2
-    let Year2sem4pdf_sub3=req.files.Year2Sem4Pdf_sub3
-    let Year2sem4pdf_sub4=req.files.Year2Sem4Pdf_sub4
-    let Year2sem4pdf_sub5=req.files.Year2Sem4Pdf_sub5
-    let Year2sem4pdf_sub6=req.files.Year2Sem4Pdf_sub6
-
-    let Year2sem5pdf_sub1=req.files.Year2Sem5Pdf_sub1
-    let Year2sem5pdf_sub2=req.files.Year2Sem5Pdf_sub2
-    let Year2sem5pdf_sub3=req.files.Year2Sem5Pdf_sub3
-    let Year2sem5pdf_sub4=req.files.Year2Sem5Pdf_sub4
-    let Year2sem5pdf_sub5=req.files.Year2Sem5Pdf_sub5
-    let Year2sem5pdf_sub6=req.files.Year2Sem5Pdf_sub6
-
-    let Year2sem6pdf_sub1=req.files.Year2Sem6Pdf_sub1
-    let Year2sem6pdf_sub2=req.files.Year2Sem6Pdf_sub2
-    let Year2sem6pdf_sub3=req.files.Year2Sem6Pdf_sub3
-    let Year2sem6pdf_sub4=req.files.Year2Sem6Pdf_sub4
-    let Year2sem6pdf_sub5=req.files.Year2Sem6Pdf_sub5
-    let Year2sem6pdf_sub6=req.files.Year2Sem6Pdf_sub6
+   
 
     //sem1
     Year2sem1pdf_sub1.mv('./public/file-pdf/'+id+'Year2sem1sub1'+'.pdf',(err)=>{
@@ -783,7 +786,7 @@ router.post('/edit-file/:id',(req,res)=>{
     }
     if(req.files.Sem2Pdf_sub5){
       let sem2pdf_sub5=req.files.Sem2Pdf_sub5
-      sem1pdf_sub5.mv('./public/file-pdf/'+id+'sem2sub5'+'.pdf')
+      sem2pdf_sub5.mv('./public/file-pdf/'+id+'sem2sub5'+'.pdf')
     }
     if(req.files.Sem2Pdf_sub6){
       let sem2pdf_sub6=req.files.Sem2Pdf_sub6
@@ -822,7 +825,7 @@ router.post('/edit-file/:id',(req,res)=>{
       sem4pdf_sub1.mv('./public/file-pdf/'+id+'sem4sub1'+'.pdf')
     }
     if(req.files.Sem4Pdf_sub4){
-      let se4pdf_sub2=req.files.Sem4Pdf_sub2
+      let sem4pdf_sub2=req.files.Sem4Pdf_sub2
       sem4pdf_sub2.mv('./public/file-pdf/'+id+'sem4sub2'+'.pdf')
     }
     if(req.files.Sem4Pdf_sub3){
@@ -893,6 +896,164 @@ router.post('/edit-file/:id',(req,res)=>{
       let sem6pdf_sub6=req.files.Sem6Pdf_sub6
       sem6pdf_sub6.mv('./public/file-pdf/'+id+'sem6sub6'+'.pdf')
     }
+//Year 2
+    // sem-1
+    if(req.files.Year2Sem1Pdf_sub1){
+      let Year2sem1pdf_sub1=req.files.Year2Sem1Pdf_sub1
+      Year2sem1pdf_sub1.mv('./public/file-pdf/'+id+'Year2sem1sub1'+'.pdf')
+    }
+    if(req.files.Year2Sem1Pdf_sub2){
+      let Year2sem1pdf_sub2=req.files.Year2Sem1Pdf_sub2
+      Year2sem1pdf_sub2.mv('./public/file-pdf/'+id+'Year2sem1sub2'+'.pdf')
+    }
+    if(req.files.Year2Sem1Pdf_sub3){
+      let Year2sem1pdf_sub3=req.files.Year2Sem1Pdf_sub3
+      Year2sem1pdf_sub3.mv('./public/file-pdf/'+id+'Year2sem1sub3'+'.pdf')
+    }
+    if(req.files.Year2Sem1Pdf_sub4){
+      let Year2sem1pdf_sub4=req.files.Year2Sem1Pdf_sub4
+      Year2sem1pdf_sub4.mv('./public/file-pdf/'+id+'Year2sem1sub4'+'.pdf')
+    }
+    if(req.files.Year2Sem1Pdf_sub5){
+      let Year2sem1pdf_sub5=req.files.Year2Sem1Pdf_sub5
+      Year2sem1pdf_sub5.mv('./public/file-pdf/'+id+'Year2sem1sub5'+'.pdf')
+    }
+    if(req.files.Year2Sem1Pdf_sub6){
+      let Year2sem1pdf_sub6=req.files.Year2Sem1Pdf_sub6
+      Year2sem1pdf_sub6.mv('./public/file-pdf/'+id+'Year2sem1sub6'+'.pdf')
+    }
+
+    // sem-2
+    if(req.files.Year2Sem2Pdf_sub1){
+      let sem2pdf_sub1=req.files.Year2Sem2Pdf_sub1
+      Year2sem2pdf_sub1.mv('./public/file-pdf/'+id+'Year2sem2sub1'+'.pdf')
+    }
+    if(req.files.Year2Sem2Pdf_sub2){
+      let Year2sem2pdf_sub2=req.files.Year2Sem2Pdf_sub2
+      Year2sem2pdf_sub2.mv('./public/file-pdf/'+id+'Year2sem2sub2'+'.pdf')
+    }
+    if(req.files.Year2Sem2Pdf_sub3){
+      let Year2sem2pdf_sub3=req.files.Year2Sem2Pdf_sub3
+      Year2sem2pdf_sub3.mv('./public/file-pdf/'+id+'Year2sem2sub3'+'.pdf')
+    }
+    if(req.files.Year2Sem2Pdf_sub4){
+      let Year2sem2pdf_sub4=req.files.Year2Sem2Pdf_sub4
+      Year2sem2pdf_sub4.mv('./public/file-pdf/'+id+'Year2sem2sub4'+'.pdf')
+    }
+    if(req.files.Year2Sem2Pdf_sub5){
+      let Year2sem2pdf_sub5=req.files.Year2Sem2Pdf_sub5
+      Year2sem2pdf_sub5.mv('./public/file-pdf/'+id+'Year2sem2sub5'+'.pdf')
+    }
+    if(req.files.Year2Sem2Pdf_sub6){
+      let Year2sem2pdf_sub6=req.files.Year2Sem2Pdf_sub6
+      Year2sem2pdf_sub6.mv('./public/file-pdf/'+id+'Year2sem2sub6'+'.pdf')
+    }
+
+    // sem-3
+    if(req.files.Year2Sem3Pdf_sub1){
+      let Year2sem3pdf_sub1=req.files.Year2Sem3Pdf_sub1
+      Year2sem3pdf_sub1.mv('./public/file-pdf/'+id+'Year2sem3sub1'+'.pdf')
+    }
+    if(req.files.Year2Sem3Pdf_sub2){
+      let Year2sem3pdf_sub2=req.files.Year2Sem3Pdf_sub2
+      Year2sem3pdf_sub2.mv('./public/file-pdf/'+id+'Year2sem3sub2'+'.pdf')
+    }
+    if(req.files.Year2Sem3Pdf_sub3){
+      let Year2sem3pdf_sub3=req.files.Year2Sem3Pdf_sub3
+      Year2sem3pdf_sub3.mv('./public/file-pdf/'+id+'Year2sem3sub3'+'.pdf')
+    }
+    if(req.files.Year2Sem3Pdf_sub4){
+      let Year2sem3pdf_sub4=req.files.Year2Sem3Pdf_sub4
+      Year2sem3pdf_sub4.mv('./public/file-pdf/'+id+'Year2sem3sub4'+'.pdf')
+    }
+    if(req.files.Year2Sem3Pdf_sub5){
+      let Year2sem3pdf_sub5=req.files.Year2Sem3Pdf_sub5
+      Year2sem3pdf_sub5.mv('./public/file-pdf/'+id+'Year2sem3sub5'+'.pdf')
+    }
+    if(req.files.Year2Sem3Pdf_sub6){
+      let Year2sem3pdf_sub6=req.files.Year2Sem3Pdf_sub6
+      Year2sem3pdf_sub6.mv('./public/file-pdf/'+id+'Year2sem3sub6'+'.pdf')
+    }
+
+    // sem-4
+    if(req.files.Year2Sem4Pdf_sub1){
+      let Year2sem4pdf_sub1=req.files.Year2Sem4Pdf_sub1
+      Year2sem4pdf_sub1.mv('./public/file-pdf/'+id+'Year2sem4sub1'+'.pdf')
+    }
+    if(req.files.Year2Sem4Pdf_sub4){
+      let Year2sem4pdf_sub2=req.files.Year2Sem4Pdf_sub2
+      Year2sem4pdf_sub2.mv('./public/file-pdf/'+id+'Year2sem4sub2'+'.pdf')
+    }
+    if(req.files.Year2Sem4Pdf_sub3){
+      let Year2sem4pdf_sub3=req.files.Year2Sem4Pdf_sub3
+      Year2sem4pdf_sub3.mv('./public/file-pdf/'+id+'Year2sem4sub3'+'.pdf')
+    }
+    if(req.files.Year2Sem4Pdf_sub4){
+      let Year2sem4pdf_sub4=req.files.Year2Sem4Pdf_sub4
+      Year2sem4pdf_sub4.mv('./public/file-pdf/'+id+'Year2sem4sub4'+'.pdf')
+    }
+    if(req.files.Year2Sem4Pdf_sub5){
+      let Year2sem4pdf_sub5=req.files.Year2Sem4Pdf_sub5
+      Year2sem4pdf_sub5.mv('./public/file-pdf/'+id+'Year2sem4sub5'+'.pdf')
+    }
+    if(req.files.Year2Sem4Pdf_sub6){
+      let Year2sem4pdf_sub6=req.files.Year2Sem4Pdf_sub6
+      Year2sem4pdf_sub6.mv('./public/file-pdf/'+id+'Year2sem4sub6'+'.pdf')
+    }
+
+    // sem-5
+    if(req.files.Year2Sem5Pdf_sub1){
+      let Year2sem5pdf_sub1=req.files.Year2Sem5Pdf_sub1
+      Year2sem5pdf_sub1.mv('./public/file-pdf/'+id+'Year2sem5sub1'+'.pdf')
+    }
+    if(req.files.Year2Sem5Pdf_sub2){
+      let Year2sem5pdf_sub2=req.files.Year2Sem5Pdf_sub2
+      Year2sem5pdf_sub2.mv('./public/file-pdf/'+id+'Year2sem5sub2'+'.pdf')
+    }
+    if(req.files.Year2Sem5Pdf_sub3){
+      let Year2sem5pdf_sub3=req.files.Year2Sem5Pdf_sub3
+      Year2sem5pdf_sub3.mv('./public/file-pdf/'+id+'Year2sem5sub3'+'.pdf')
+    }
+    if(req.files.Year2Sem5Pdf_sub4){
+      let Year2sem5pdf_sub4=req.files.Year2Sem5Pdf_sub4
+      Year2sem5pdf_sub4.mv('./public/file-pdf/'+id+'Year2sem5sub4'+'.pdf')
+    }
+    if(req.files.Year2Sem5Pdf_sub5){
+      let Year2sem5pdf_sub5=req.files.Year2Sem5Pdf_sub5
+      Year2sem5pdf_sub5.mv('./public/file-pdf/'+id+'Year2sem5sub5'+'.pdf')
+    }
+    if(req.files.Year2Sem5Pdf_sub6){
+      let Year2sem5pdf_sub6=req.files.Year2Sem5Pdf_sub6
+      Year2sem5pdf_sub6.mv('./public/file-pdf/'+id+'Year2sem5sub6'+'.pdf')
+    }
+
+    // sem-6
+    if(req.files.Year2Sem6Pdf_sub1){
+      let Year2sem6pdf_sub1=req.files.Year2Sem6Pdf_sub1
+      Year2sem6pdf_sub1.mv('./public/file-pdf/'+id+'Year2sem6sub1'+'.pdf')
+    }
+    if(req.files.Year2Sem6Pdf_sub2){
+      let Year2sem6pdf_sub2=req.files.Year2Sem6Pdf_sub2
+      Year2sem6pdf_sub2.mv('./public/file-pdf/'+id+'Year2sem6sub2'+'.pdf')
+    }
+    if(req.files.Year2Sem2Pdf_sub3){
+      let Year2sem2pdf_sub3=req.files.Year2Sem2Pdf_sub3
+      Year2sem2pdf_sub3.mv('./public/file-pdf/'+id+'Year2sem2sub3'+'.pdf')
+    }
+    if(req.files.Year2Sem6Pdf_sub4){
+      let Year2sem6pdf_sub4=req.files.Year2Sem6Pdf_sub4
+      Year2sem6pdf_sub4.mv('./public/file-pdf/'+id+'Year2sem6sub4'+'.pdf')
+    }
+    if(req.files.Year2em6Pdf_sub5){
+      let Year2sem6pdf_sub5=req.files.Year2Sem6Pdf_sub5
+      Year2sem6pdf_sub5.mv('./public/file-pdf/'+id+'Year2sem6sub5'+'.pdf')
+    }
+    if(req.files.Year2Sem6Pdf_sub6){
+      let Year2sem6pdf_sub6=req.files.Year2Sem6Pdf_sub6
+      Year2sem6pdf_sub6.mv('./public/file-pdf/'+id+'Year2sem6sub6'+'.pdf')
+    }
+    
+  //})
     
   })
 })
