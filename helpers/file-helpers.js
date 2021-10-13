@@ -87,7 +87,57 @@ module.exports={
                     Sem6Sub_name3:fileDetails.Sem6Sub_name3,
                     Sem6Sub_name4:fileDetails.Sem6Sub_name4,
                     Sem6Sub_name5:fileDetails.Sem6Sub_name5,
-                    Sem6Sub_name6:fileDetails.Sem6Sub_name6
+                    Sem6Sub_name6:fileDetails.Sem6Sub_name6,
+
+                    Year2:fileDetails.Year2 ,
+
+                    Year2Sem1:fileDetails.Year2Sem1,
+                    Year2Sem1Sub_name1:fileDetails.Year2Sem1Sub_name1,
+                    Year2Sem1Sub_name2:fileDetails.Year2Sem1Sub_name2,
+                    Year2Sem1Sub_name3:fileDetails.Year2Sem1Sub_name3,
+                    Year2Sem1Sub_name4:fileDetails.Year2Sem1Sub_name4,
+                    Year2Sem1Sub_name5:fileDetails.Year2Sem1Sub_name5,
+                    Year2Sem1Sub_name6:fileDetails.Year2Sem1Sub_name6,
+
+                    Year2Sem2:fileDetails.Year2Sem2,
+                    Year2Sem2Sub_name1:fileDetails.Year2Sem2Sub_name1,
+                    Year2Sem2Sub_name2:fileDetails.Year2Sem2Sub_name2,
+                    Year2Sem2Sub_name3:fileDetails.Year2Sem2Sub_name3,
+                    Year2Sem2Sub_name4:fileDetails.Year2Sem2Sub_name4,
+                    Year2Sem2Sub_name5:fileDetails.Year2Sem2Sub_name5,
+                    Year2Sem2Sub_name6:fileDetails.Year2Sem2Sub_name6,
+
+                    Year2Sem3:fileDetails.Year2Sem3,
+                    Year2Sem3Sub_name1:fileDetails.Year2Sem3Sub_name1,
+                    Year2Sem3Sub_name2:fileDetails.Year2Sem3Sub_name2,
+                    Year2Sem3Sub_name3:fileDetails.Year2Sem3Sub_name3,
+                    Year2Sem3Sub_name4:fileDetails.Year2Sem3Sub_name4,
+                    Year2Sem3Sub_name5:fileDetails.Year2Sem3Sub_name5,
+                    Year2Sem3Sub_name6:fileDetails.Year2Sem3Sub_name6,
+
+                    Year2Sem4:fileDetails.Sem4,
+                    Year2Sem4Sub_name1:fileDetails.Year2Sem4Sub_name1,
+                    Year2Sem4Sub_name2:fileDetails.Year2Sem4Sub_name2,
+                    Year2Sem4Sub_name3:fileDetails.Year2Sem4Sub_name3,
+                    Year2Sem4Sub_name4:fileDetails.Year2Sem4Sub_name4,
+                    Year2Sem4Sub_name5:fileDetails.Year2Sem4Sub_name5,
+                    Year2Sem4Sub_name6:fileDetails.Year2Sem4Sub_name6,
+
+                    Year2Sem5:fileDetails.Year2Sem5,
+                    Year2Sem5Sub_name1:fileDetails.Year2Sem5Sub_name1,
+                    Year2Sem5Sub_name2:fileDetails.Year2Sem5Sub_name2,
+                    Year2Sem5Sub_name3:fileDetails.Year2Sem5Sub_name3,
+                    Year2Sem5Sub_name4:fileDetails.Year2Sem5Sub_name4,
+                    Year2Sem5Sub_name5:fileDetails.Year2Sem5Sub_name5,
+                    Year2Sem5Sub_name6:fileDetails.Year2Sem5Sub_name6,
+
+                    Year2Sem6:fileDetails.Year2Sem6,
+                    Year2Sem6Sub_name1:fileDetails.Year2Sem6Sub_name1,
+                    Year2Sem6Sub_name2:fileDetails.Year2Sem6Sub_name2,
+                    Year2Sem6Sub_name3:fileDetails.Year2Sem6Sub_name3,
+                    Year2Sem6Sub_name4:fileDetails.Year2Sem6Sub_name4,
+                    Year2Sem6Sub_name5:fileDetails.Year2Sem6Sub_name5,
+                    Year2Sem6Sub_name6:fileDetails.Year2Sem6Sub_name6
 
                 }
             }).then((responce)=>{

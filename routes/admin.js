@@ -145,7 +145,7 @@ router.post('/add-file',(req,res)=>{
     let sem6pdf_sub6=req.files.Sem6Pdf_sub6
 
      // year2
-     let Year2sem1pdf_sub1=req.files.Year2Sem1Pdf_sub1
+     let Year2sem1pdf_sub1=req.files.Year2Sem1Pdf_sub1 
      let Year2sem1pdf_sub2=req.files.Year2Sem1Pdf_sub2
      let Year2sem1pdf_sub3=req.files.Year2Sem1Pdf_sub3
      let Year2sem1pdf_sub4=req.files.Year2Sem1Pdf_sub4
@@ -1052,7 +1052,7 @@ router.post('/edit-file/:id',(req,res)=>{
       let Year2sem6pdf_sub6=req.files.Year2Sem6Pdf_sub6
       Year2sem6pdf_sub6.mv('./public/file-pdf/'+id+'Year2sem6sub6'+'.pdf')
     }
-    
+     
   //})
     
   })
