@@ -3,27 +3,28 @@
 <section>
     <div class="container">
         <div class="row">
-            <h2>Users From {{S_Course}}</h2>
+            <h2>Admins</h2>
             <div>
                 <table class="table mt-5">
-                <a style="float: right;" href="/admin/Delete-file/{{this._id}}" class="btn btn-danger">Delete All Users</a>
   <thead class="table-dark">
     <tr>
       <th scope="col">S.No</th>
       <th scope="col">Name</th>
-      <th scope="col">Cource</th>
+      <th scope="col">Department</th>
       <th scope="col">Email</th>
+      
       
     </tr>
   </thead>
   <tbody>
      {{!-- {{#each users}} --}}
-     {{#each Selected_Course_Users}}
+     {{#each admins}}
     <tr>
       <th scope="row">></th>
       <td>{{this.Name}}</td>
-      <td>{{this.cource}}</td>
+      <td>{{this.Department}}</td>
       <td>{{this.Email}}</td>
+
      
     </tr>
    

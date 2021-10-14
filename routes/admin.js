@@ -81,8 +81,9 @@ router.get('/adminLogout',(req,res)=>{
 router.get('/userDetails',async (req,res)=>{
   let Selected_Course_Users=await userHelpers.getUsersOfSelected_C(req.query.name)
   let admindata=req.session.admin
+  let S_Course=req.query.name
   console.log(Selected_Course_Users);
-  res.render('admin/userDetails',{Selected_Course_Users,admin:true,admindata})
+  res.render('admin/userDetails',{Selected_Course_Users,admin:true,admindata,S_Course})
 })
 
 router.get('/Select_C_to_View_User/',(req,res,next)=>{
@@ -98,7 +99,16 @@ router.get('/Select_C_to_View_User/',(req,res,next)=>{
   
 })
 //************/user Details page *////
+//Admin Details page
 
+
+router.get('/Admin_Details',(req,res,next)=>{
+  let admindata=req.session.admin
+  adminHelpers.getAllAdmins().then((admins)=>{
+    res.render('admin/Admin_Details',{admins,admin:true,admindata})
+  })
+})
+//****Admin Details */
 
 router.get('/add-file',verifyAdminLogin,function(req,res){
   let admindata=req.session.admin
@@ -729,9 +739,6 @@ router.post('/add-file',(req,res)=>{
         console.log(err);
       }
     })
-    
-    
-    
   })
 })
 

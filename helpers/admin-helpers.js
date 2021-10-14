@@ -37,7 +37,14 @@ module.exports={
                 resolve({loginStatus:false})
             }
         })
-    }
+    },
+
+    getAllAdmins:()=>{
+        return new Promise(async(resolve,reject)=>{
+            let admins=await db.get().collection(collection.ADMIN_COLLECTION).find().toArray()
+            resolve(admins)
+        })
+    },
 
 
     
