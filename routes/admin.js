@@ -77,10 +77,22 @@ router.get('/adminLogout',(req,res)=>{
 //*******/login signup********//
 
 //************user Details page */////
-router.get('/userDetails',(req,res,next)=>{
+
+router.get('/userDetails',async (req,res)=>{
+  let Selected_Course_Users=await userHelpers.getUsersOfSelected_C(req.query.name)
   let admindata=req.session.admin
+  console.log(Selected_Course_Users);
+  res.render('admin/userDetails',{Selected_Course_Users,admin:true,admindata})
+})
+
+router.get('/Select_C_to_View_User/',(req,res,next)=>{
+  let admindata=req.session.admin
+
+  // let Selected_Course=req.query.name
+  // console.log(Selected_Course)
+
   userHelpers.getAllUsers().then((users)=>{
-    res.render('admin/userDetails',{users, admin:true,admindata})
+    res.render('admin/Select_C_to_View_User',{users,admin:true,admindata})
   })
   
   

@@ -40,4 +40,11 @@ module.exports={
             resolve(users)
         })
     },
+    getUsersOfSelected_C:(C_Name)=>{
+        return new Promise(async(resolve,reject)=>{
+            let users_C= await db.get().collection(collection.USER_COLLECTION).find({cource:C_Name}).toArray()
+            resolve(users_C)
+            
+        })
+    },
 }
