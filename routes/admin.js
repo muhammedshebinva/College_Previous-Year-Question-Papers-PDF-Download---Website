@@ -78,15 +78,15 @@ router.get('/adminLogout',(req,res)=>{
 
 //************user Details page */////
 
-router.get('/userDetails',async (req,res)=>{
+router.get('/userDetails',verifyAdminLogin,async (req,res)=>{
   let Selected_Course_Users=await userHelpers.getUsersOfSelected_C(req.query.name)
   let admindata=req.session.admin
   let S_Course=req.query.name
-  console.log(Selected_Course_Users);
+  //console.log(Selected_Course_Users);
   res.render('admin/userDetails',{Selected_Course_Users,admin:true,admindata,S_Course})
 })
 
-router.get('/Select_C_to_View_User/',(req,res,next)=>{
+router.get('/Select_C_to_View_User/',verifyAdminLogin,(req,res,next)=>{
   let admindata=req.session.admin
 
   // let Selected_Course=req.query.name
@@ -98,11 +98,20 @@ router.get('/Select_C_to_View_User/',(req,res,next)=>{
   
   
 })
+
+router.get('/Delete-users',verifyAdminLogin,(req,res)=>{
+  let UsersOf_C=req.query.Course_Of_Users
+  console.log(UsersOf_C);
+  
+  userHelpers.delete_Users_Of_Selected_Course(UsersOf_C).then((response)=>{
+    res.redirect('/admin/Select_C_to_View_User')
+  })
+})
 //************/user Details page *////
 //Admin Details page
 
 
-router.get('/Admin_Details',(req,res,next)=>{
+router.get('/Admin_Details',verifyAdminLogin,(req,res,next)=>{
   let admindata=req.session.admin
   adminHelpers.getAllAdmins().then((admins)=>{
     res.render('admin/Admin_Details',{admins,admin:true,admindata})

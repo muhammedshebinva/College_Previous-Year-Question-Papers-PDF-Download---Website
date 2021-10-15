@@ -6,12 +6,12 @@
             <h2>Users From {{S_Course}}</h2>
             <div>
                 <table class="table mt-5">
-                <a style="float: right;" href="/admin/Delete-file/{{this._id}}" class="btn btn-danger">Delete All Users</a>
+                <a style="float: right;" href="/admin/Delete-users?Course_Of_Users={{S_Course}}" class="btn btn-danger" onclick="return confirm('Are you what to Delete all Users of {{S_Course}}')">Delete All Users</a>
   <thead class="table-dark">
     <tr>
       <th scope="col">S.No</th>
       <th scope="col">Name</th>
-      <th scope="col">Cource</th>
+      <th scope="col">Course</th>
       <th scope="col">Email</th>
       
     </tr>

@@ -1,6 +1,7 @@
 var db=require('../config/connection')
 var collection=require('../config/collections')
 const bcrypt=require('bcrypt')
+const { response } = require('express')
 module.exports={
     doSignup:(userData)=>{
         return new Promise(async(resolve,reject)=>{
@@ -47,4 +48,13 @@ module.exports={
             
         })
     },
+    delete_Users_Of_Selected_Course:(UsersOf_C)=>{
+        return new Promise((resolve,reject)=>{
+            db.get().collection(collection.USER_COLLECTION).deleteMany({cource:UsersOf_C}).then((response)=>{
+            resolve(response)
+           })
+                
+           
+        })
+    }
 }
