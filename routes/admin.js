@@ -49,13 +49,14 @@ router.get('/adminLogin',(req,res)=>{
   
 })
 
-router.get('/adminSignup',verifyAdminLogin,(req,res)=>{
+router.get('/adminSignup',(req,res)=>{
   let admindata=req.session.admin
   res.render('admin/adminSignup',{admin:true,admindata})
 })
 router.post('/adminSignup',(req,res)=>{
   adminHelpers.doadminSignup(req.body).then((response)=>{
     console.log(response);
+    res.redirect('/admin')
   })
 })
 router.post('/adminLogin',(req,res)=>{
@@ -107,18 +108,25 @@ router.get('/Delete-users',verifyAdminLogin,(req,res)=>{
     res.redirect('/admin/Select_C_to_View_User')
   })
 })
-//************/user Details page *////
+
+
 //Admin Details page
-
-
 router.get('/Admin_Details',verifyAdminLogin,(req,res,next)=>{
   let admindata=req.session.admin
   adminHelpers.getAllAdmins().then((admins)=>{
     res.render('admin/Admin_Details',{admins,admin:true,admindata})
   })
 })
-//****Admin Details */
 
+//delete admin
+router.get('/delete-admin/:id',verifyAdminLogin,(req,res)=>{
+  let adminId=req.params.id
+  
+  adminHelpers.deleteAdmin(adminId).then((response)=>{
+    res.redirect('/admin/Admin_Details')
+  })
+})
+//add file
 router.get('/add-file',verifyAdminLogin,function(req,res){
   let admindata=req.session.admin
   res.render('admin/add-file',{admin:true,admindata})
@@ -750,7 +758,7 @@ router.post('/add-file',(req,res)=>{
     })
   })
 })
-
+//delete file
 router.get('/delete-file/:id',verifyAdminLogin,(req,res)=>{
   let fileId=req.params.id
   
@@ -758,6 +766,7 @@ router.get('/delete-file/:id',verifyAdminLogin,(req,res)=>{
     res.redirect('/admin/')
   })
 })
+//edit file
 router.get('/edit-file/:id',verifyAdminLogin,async (req,res)=>{
   let file=await fileHelpers.getFileDetails(req.params.id)
   let admindata=req.session.admin

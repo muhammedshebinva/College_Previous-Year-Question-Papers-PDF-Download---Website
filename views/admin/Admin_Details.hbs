@@ -12,6 +12,7 @@
       <th scope="col">Name</th>
       <th scope="col">Department</th>
       <th scope="col">Email</th>
+      <th scope="col"></th>
       
       
     </tr>
@@ -24,6 +25,7 @@
       <td>{{this.Name}}</td>
       <td>{{this.Department}}</td>
       <td>{{this.Email}}</td>
+      <td><a href="/admin/delete-admin/{{this._id}}" class="btn btn-danger" onclick="return confirm('Are you what to Delete {{this.Name}}')">Delete</a></td>
 
      
     </tr>

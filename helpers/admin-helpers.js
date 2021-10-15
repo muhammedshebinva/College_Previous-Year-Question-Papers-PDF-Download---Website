@@ -2,6 +2,7 @@ var db=require('../config/connection')
 var collection=require('../config/collections')
 const bcrypt=require('bcrypt')
 const { response } = require('express')
+var objectId=require('mongodb').ObjectId
 
 module.exports={
     
@@ -41,10 +42,19 @@ module.exports={
 
     getAllAdmins:()=>{
         return new Promise(async(resolve,reject)=>{
-            let admins=await db.get().collection(collection.ADMIN_COLLECTION).find().toArray()
+            let admins=await db.get().collection(collection.ADMIN_COLLECTION).find({"Department":{$ne:"Super Admin"}}).toArray()
             resolve(admins)
         })
     },
+    deleteAdmin:(adminId)=>{
+        return new Promise((resolve,reject)=>{
+            db.get().collection(collection.ADMIN_COLLECTION).deleteOne({_id:objectId(adminId)}).then((response)=>{
+                console.log(response);
+                resolve(response)
+            })
+        })
+    },
+    
 
 
     
