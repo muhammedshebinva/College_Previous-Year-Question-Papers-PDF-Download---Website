@@ -123,9 +123,17 @@ router.get('/delete-admin/:id',verifyAdminLogin,(req,res)=>{
   let adminId=req.params.id
   
   adminHelpers.deleteAdmin(adminId).then((response)=>{
+    
     res.redirect('/admin/Admin_Details')
   })
 })
+
+//Admin About Page
+router.get('/admin_About', (req,res)=>{
+  let admindata=req.session.admin
+  res.render('admin/admin_About',{admin:true,admindata})
+})
+
 //add file
 router.get('/add-file',verifyAdminLogin,function(req,res){
   let admindata=req.session.admin
