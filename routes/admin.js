@@ -134,6 +134,13 @@ router.get('/admin_About', (req,res)=>{
   res.render('admin/admin_About',{admin:true,admindata})
 })
 
+//admin Contact page
+//Admin About Page
+router.get('/admin_Contact', (req,res)=>{
+  let admindata=req.session.admin
+  res.render('admin/admin_Contact',{admin:true,admindata})
+})
+
 //add file
 router.get('/add-file',verifyAdminLogin,function(req,res){
   let admindata=req.session.admin
