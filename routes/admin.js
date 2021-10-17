@@ -14,7 +14,7 @@ const verifyAdminLogin=(req,res,next)=>{
     res.redirect('/admin/adminLogin')
   }
 }
-/* GET users listing. */
+
 
 
 
