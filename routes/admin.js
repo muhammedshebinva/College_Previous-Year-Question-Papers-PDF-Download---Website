@@ -7,6 +7,8 @@ var fileHelpers=require('../helpers/file-helpers');
 var adminHelpers=require('../helpers/admin-helpers');
 var userHelpers=require('../helpers/user-helpers');
 
+var upload = require('express-fileupload');
+
 const verifyAdminLogin=(req,res,next)=>{
   if(req.session.loggedin){
     next()
@@ -156,90 +158,90 @@ router.post('/add-file',(req,res)=>{
     let pdf_sub5=req.files.Pdf_sub5
     let pdf_sub6=req.files.Pdf_sub6
 
-    let sem1pdf_sub1=req.files.Sem1Pdf_sub1
-    let sem1pdf_sub2=req.files.Sem1Pdf_sub2
-    let sem1pdf_sub3=req.files.Sem1Pdf_sub3
-    let sem1pdf_sub4=req.files.Sem1Pdf_sub4
-    let sem1pdf_sub5=req.files.Sem1Pdf_sub5
-    let sem1pdf_sub6=req.files.Sem1Pdf_sub6
+    let sem1pdf_sub1=req.files.Sem1Pdf_sub1;
+    let sem1pdf_sub2=req.files.Sem1Pdf_sub2;
+    let sem1pdf_sub3=req.files.Sem1Pdf_sub3;
+    let sem1pdf_sub4=req.files.Sem1Pdf_sub4;
+    let sem1pdf_sub5=req.files.Sem1Pdf_sub5;
+    let sem1pdf_sub6=req.files.Sem1Pdf_sub6;
 
-    let sem2pdf_sub1=req.files.Sem2Pdf_sub1
-    let sem2pdf_sub2=req.files.Sem2Pdf_sub2
-    let sem2pdf_sub3=req.files.Sem2Pdf_sub3
-    let sem2pdf_sub4=req.files.Sem2Pdf_sub4
-    let sem2pdf_sub5=req.files.Sem2Pdf_sub5
-    let sem2pdf_sub6=req.files.Sem2Pdf_sub6
+    let sem2pdf_sub1=req.files.Sem2Pdf_sub1;
+    let sem2pdf_sub2=req.files.Sem2Pdf_sub2;
+    let sem2pdf_sub3=req.files.Sem2Pdf_sub3;
+    let sem2pdf_sub4=req.files.Sem2Pdf_sub4;
+    let sem2pdf_sub5=req.files.Sem2Pdf_sub5;
+    let sem2pdf_sub6=req.files.Sem2Pdf_sub6;
 
-    let sem3pdf_sub1=req.files.Sem3Pdf_sub1
-    let sem3pdf_sub2=req.files.Sem3Pdf_sub2
-    let sem3pdf_sub3=req.files.Sem3Pdf_sub3
-    let sem3pdf_sub4=req.files.Sem3Pdf_sub4
-    let sem3pdf_sub5=req.files.Sem3Pdf_sub5
-    let sem3pdf_sub6=req.files.Sem3Pdf_sub6
+    let sem3pdf_sub1=req.files.Sem3Pdf_sub1;
+    let sem3pdf_sub2=req.files.Sem3Pdf_sub2;
+    let sem3pdf_sub3=req.files.Sem3Pdf_sub3;
+    let sem3pdf_sub4=req.files.Sem3Pdf_sub4;
+    let sem3pdf_sub5=req.files.Sem3Pdf_sub5;
+    let sem3pdf_sub6=req.files.Sem3Pdf_sub6;
 
-    let sem4pdf_sub1=req.files.Sem4Pdf_sub1
-    let sem4pdf_sub2=req.files.Sem4Pdf_sub2
-    let sem4pdf_sub3=req.files.Sem4Pdf_sub3
-    let sem4pdf_sub4=req.files.Sem4Pdf_sub4
-    let sem4pdf_sub5=req.files.Sem4Pdf_sub5
-    let sem4pdf_sub6=req.files.Sem4Pdf_sub6
+    let sem4pdf_sub1=req.files.Sem4Pdf_sub1;
+    let sem4pdf_sub2=req.files.Sem4Pdf_sub2;
+    let sem4pdf_sub3=req.files.Sem4Pdf_sub3;
+    let sem4pdf_sub4=req.files.Sem4Pdf_sub4;
+    let sem4pdf_sub5=req.files.Sem4Pdf_sub5;
+    let sem4pdf_sub6=req.files.Sem4Pdf_sub6;
 
-    let sem5pdf_sub1=req.files.Sem5Pdf_sub1
-    let sem5pdf_sub2=req.files.Sem5Pdf_sub2
-    let sem5pdf_sub3=req.files.Sem5Pdf_sub3
-    let sem5pdf_sub4=req.files.Sem5Pdf_sub4
-    let sem5pdf_sub5=req.files.Sem5Pdf_sub5
-    let sem5pdf_sub6=req.files.Sem5Pdf_sub6
+    let sem5pdf_sub1=req.files.Sem5Pdf_sub1;
+    let sem5pdf_sub2=req.files.Sem5Pdf_sub2;
+    let sem5pdf_sub3=req.files.Sem5Pdf_sub3;
+    let sem5pdf_sub4=req.files.Sem5Pdf_sub4;
+    let sem5pdf_sub5=req.files.Sem5Pdf_sub5;
+    let sem5pdf_sub6=req.files.Sem5Pdf_sub6;
 
-    let sem6pdf_sub1=req.files.Sem6Pdf_sub1
-    let sem6pdf_sub2=req.files.Sem6Pdf_sub2
-    let sem6pdf_sub3=req.files.Sem6Pdf_sub3
-    let sem6pdf_sub4=req.files.Sem6Pdf_sub4
-    let sem6pdf_sub5=req.files.Sem6Pdf_sub5
-    let sem6pdf_sub6=req.files.Sem6Pdf_sub6
+    let sem6pdf_sub1=req.files.Sem6Pdf_sub1;
+    let sem6pdf_sub2=req.files.Sem6Pdf_sub2;
+    let sem6pdf_sub3=req.files.Sem6Pdf_sub3;
+    let sem6pdf_sub4=req.files.Sem6Pdf_sub4;
+    let sem6pdf_sub5=req.files.Sem6Pdf_sub5;
+    let sem6pdf_sub6=req.files.Sem6Pdf_sub6;
 
      // year2
-     let Year2sem1pdf_sub1=req.files.Year2Sem1Pdf_sub1 
-     let Year2sem1pdf_sub2=req.files.Year2Sem1Pdf_sub2
-     let Year2sem1pdf_sub3=req.files.Year2Sem1Pdf_sub3
-     let Year2sem1pdf_sub4=req.files.Year2Sem1Pdf_sub4
-     let Year2sem1pdf_sub5=req.files.Year2Sem1Pdf_sub5
-     let Year2sem1pdf_sub6=req.files.Year2Sem1Pdf_sub6
+     let Year2sem1pdf_sub1=req.files.Year2Sem1Pdf_sub1;
+     let Year2sem1pdf_sub2=req.files.Year2Sem1Pdf_sub2;
+     let Year2sem1pdf_sub3=req.files.Year2Sem1Pdf_sub3;
+     let Year2sem1pdf_sub4=req.files.Year2Sem1Pdf_sub4;
+     let Year2sem1pdf_sub5=req.files.Year2Sem1Pdf_sub5;
+     let Year2sem1pdf_sub6=req.files.Year2Sem1Pdf_sub6;
  
-     let Year2sem2pdf_sub1=req.files.Year2Sem2Pdf_sub1
-     let Year2sem2pdf_sub2=req.files.Year2Sem2Pdf_sub2
-     let Year2sem2pdf_sub3=req.files.Year2Sem2Pdf_sub3
-     let Year2sem2pdf_sub4=req.files.Year2Sem2Pdf_sub4
-     let Year2sem2pdf_sub5=req.files.Year2Sem2Pdf_sub5
-     let Year2sem2pdf_sub6=req.files.Year2Sem2Pdf_sub6
+     let Year2sem2pdf_sub1=req.files.Year2Sem2Pdf_sub1;
+     let Year2sem2pdf_sub2=req.files.Year2Sem2Pdf_sub2;
+     let Year2sem2pdf_sub3=req.files.Year2Sem2Pdf_sub3;
+     let Year2sem2pdf_sub4=req.files.Year2Sem2Pdf_sub4;
+     let Year2sem2pdf_sub5=req.files.Year2Sem2Pdf_sub5;
+     let Year2sem2pdf_sub6=req.files.Year2Sem2Pdf_sub6;
  
-     let Year2sem3pdf_sub1=req.files.Year2Sem3Pdf_sub1
-     let Year2sem3pdf_sub2=req.files.Year2Sem3Pdf_sub2
-     let Year2sem3pdf_sub3=req.files.Year2Sem3Pdf_sub3
-     let Year2sem3pdf_sub4=req.files.Year2Sem3Pdf_sub4
-     let Year2sem3pdf_sub5=req.files.Year2Sem3Pdf_sub5
-     let Year2sem3pdf_sub6=req.files.Year2Sem3Pdf_sub6
+     let Year2sem3pdf_sub1=req.files.Year2Sem3Pdf_sub1;
+     let Year2sem3pdf_sub2=req.files.Year2Sem3Pdf_sub2;
+     let Year2sem3pdf_sub3=req.files.Year2Sem3Pdf_sub3;
+     let Year2sem3pdf_sub4=req.files.Year2Sem3Pdf_sub4;
+     let Year2sem3pdf_sub5=req.files.Year2Sem3Pdf_sub5;
+     let Year2sem3pdf_sub6=req.files.Year2Sem3Pdf_sub6;
  
-     let Year2sem4pdf_sub1=req.files.Year2Sem4Pdf_sub1
-     let Year2sem4pdf_sub2=req.files.Year2Sem4Pdf_sub2
-     let Year2sem4pdf_sub3=req.files.Year2Sem4Pdf_sub3
-     let Year2sem4pdf_sub4=req.files.Year2Sem4Pdf_sub4
-     let Year2sem4pdf_sub5=req.files.Year2Sem4Pdf_sub5
-     let Year2sem4pdf_sub6=req.files.Year2Sem4Pdf_sub6
+     let Year2sem4pdf_sub1=req.files.Year2Sem4Pdf_sub1;
+     let Year2sem4pdf_sub2=req.files.Year2Sem4Pdf_sub2;
+     let Year2sem4pdf_sub3=req.files.Year2Sem4Pdf_sub3;
+     let Year2sem4pdf_sub4=req.files.Year2Sem4Pdf_sub4;
+     let Year2sem4pdf_sub5=req.files.Year2Sem4Pdf_sub5;
+     let Year2sem4pdf_sub6=req.files.Year2Sem4Pdf_sub6;
  
-     let Year2sem5pdf_sub1=req.files.Year2Sem5Pdf_sub1
-     let Year2sem5pdf_sub2=req.files.Year2Sem5Pdf_sub2
-     let Year2sem5pdf_sub3=req.files.Year2Sem5Pdf_sub3
-     let Year2sem5pdf_sub4=req.files.Year2Sem5Pdf_sub4
-     let Year2sem5pdf_sub5=req.files.Year2Sem5Pdf_sub5
-     let Year2sem5pdf_sub6=req.files.Year2Sem5Pdf_sub6
+     let Year2sem5pdf_sub1=req.files.Year2Sem5Pdf_sub1;
+     let Year2sem5pdf_sub2=req.files.Year2Sem5Pdf_sub2;
+     let Year2sem5pdf_sub3=req.files.Year2Sem5Pdf_sub3;
+     let Year2sem5pdf_sub4=req.files.Year2Sem5Pdf_sub4;
+     let Year2sem5pdf_sub5=req.files.Year2Sem5Pdf_sub5;
+     let Year2sem5pdf_sub6=req.files.Year2Sem5Pdf_sub6;
  
-     let Year2sem6pdf_sub1=req.files.Year2Sem6Pdf_sub1
-     let Year2sem6pdf_sub2=req.files.Year2Sem6Pdf_sub2
-     let Year2sem6pdf_sub3=req.files.Year2Sem6Pdf_sub3
-     let Year2sem6pdf_sub4=req.files.Year2Sem6Pdf_sub4
-     let Year2sem6pdf_sub5=req.files.Year2Sem6Pdf_sub5
-     let Year2sem6pdf_sub6=req.files.Year2Sem6Pdf_sub6
+     let Year2sem6pdf_sub1=req.files.Year2Sem6Pdf_sub1;
+     let Year2sem6pdf_sub2=req.files.Year2Sem6Pdf_sub2;
+     let Year2sem6pdf_sub3=req.files.Year2Sem6Pdf_sub3;
+     let Year2sem6pdf_sub4=req.files.Year2Sem6Pdf_sub4;
+     let Year2sem6pdf_sub5=req.files.Year2Sem6Pdf_sub5;
+     let Year2sem6pdf_sub6=req.files.Year2Sem6Pdf_sub6;
 
     //sem1
     sem1pdf_sub1.mv('./public/file-pdf/'+id+'sem1sub1'+'.pdf',(err)=>{

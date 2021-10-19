@@ -4,9 +4,9 @@ var objectId=require('mongodb').ObjectId
 
 module.exports={
 
-    addFile:(file,callback)=>{
-        console.log(file);
-        db.get().collection('file').insertOne(file).then((data)=>{
+    addFile:(files,callback)=>{
+        console.log(files);
+        db.get().collection('file').insertOne(files).then((data)=>{
             console.log(data);
             
             callback(data.insertedId);
