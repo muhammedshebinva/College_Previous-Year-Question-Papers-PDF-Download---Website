@@ -1418,6 +1418,163 @@ router.post('/edit-file/:id',(req,res)=>{
       let Year2sem6pdf_sub6=req.files.Year2Sem6Pdf_sub6
       Year2sem6pdf_sub6.mv('./public/file-pdf/'+id+'Year2sem6sub6'+'.pdf')
     }
+
+    //year 3
+    // sem-1
+    if(req.files.Year3Sem1Pdf_sub1){
+      let Year3sem1pdf_sub1=req.files.Year3Sem1Pdf_sub1
+      Year3sem1pdf_sub1.mv('./public/file-pdf/'+id+'Year3sem1sub1'+'.pdf')
+    }
+    if(req.files.Year3Sem1Pdf_sub2){
+      let Year3sem1pdf_sub2=req.files.Year3Sem1Pdf_sub2
+      Year3sem1pdf_sub2.mv('./public/file-pdf/'+id+'Year3sem1sub2'+'.pdf')
+    }
+    if(req.files.Year3Sem1Pdf_sub3){
+      let Year3sem1pdf_sub3=req.files.Year3Sem1Pdf_sub3
+      Year3sem1pdf_sub3.mv('./public/file-pdf/'+id+'Year3sem1sub3'+'.pdf')
+    }
+    if(req.files.Year3Sem1Pdf_sub4){
+      let Year3sem1pdf_sub4=req.files.Sem1Pdf_sub4
+      Year3sem1pdf_sub4.mv('./public/file-pdf/'+id+'Year3sem1sub4'+'.pdf')
+    }
+    if(req.files.Year3Sem1Pdf_sub5){
+      let Year3sem1pdf_sub5=req.files.Year3Sem1Pdf_sub5
+      Year3sem1pdf_sub5.mv('./public/file-pdf/'+id+'Year3sem1sub5'+'.pdf')
+    }
+    if(req.files.Year3Sem1Pdf_sub6){
+      let Year3sem1pdf_sub6=req.files.Year3Sem1Pdf_sub6
+      Year3sem1pdf_sub6.mv('./public/file-pdf/'+id+'Year3sem1sub6'+'.pdf')
+    }
+
+    // sem-2
+    if(req.files.Year3Sem2Pdf_sub1){
+      let sem2pdf_sub1=req.files.Year3Sem2Pdf_sub1
+      Year3sem2pdf_sub1.mv('./public/file-pdf/'+id+'Year3sem2sub1'+'.pdf')
+    }
+    if(req.files.Year3Sem2Pdf_sub2){
+      let Year3sem2pdf_sub2=req.files.Year3Sem2Pdf_sub2
+      Year3sem2pdf_sub2.mv('./public/file-pdf/'+id+'Year3sem2sub2'+'.pdf')
+    }
+    if(req.files.Year3Sem2Pdf_sub3){
+      let Year3sem2pdf_sub3=req.files.Year3Sem2Pdf_sub3
+      Year3sem2pdf_sub3.mv('./public/file-pdf/'+id+'Year3sem2sub3'+'.pdf')
+    }
+    if(req.files.Sem2Pdf_sub4){
+      let Year3sem2pdf_sub4=req.files.Year3Sem2Pdf_sub4
+      Year3sem2pdf_sub4.mv('./public/file-pdf/'+id+'Year3sem2sub4'+'.pdf')
+    }
+    if(req.files.Year3Sem2Pdf_sub5){
+      let Year3sem2pdf_sub5=req.Year3files.Sem2Pdf_sub5
+      Year3sem2pdf_sub5.mv('./public/file-pdf/'+id+'Year3sem2sub5'+'.pdf')
+    }
+    if(req.files.Year3Sem2Pdf_sub6){
+      let Year3sem2pdf_sub6=req.files.Year3Sem2Pdf_sub6
+      Year3sem2pdf_sub6.mv('./public/file-pdf/'+id+'Year3sem2sub6'+'.pdf')
+    }
+
+    // sem-3
+    if(req.files.Year3Sem3Pdf_sub1){
+      let Year3sem3pdf_sub1=req.files.Year3Sem3Pdf_sub1
+      Year3sem3pdf_sub1.mv('./public/file-pdf/'+id+'Year3sem3sub1'+'.pdf')
+    }
+    if(req.files.Year3Sem3Pdf_sub2){
+      let Year3sem3pdf_sub2=req.files.Year3Sem3Pdf_sub2
+      Year3sem3pdf_sub2.mv('./public/file-pdf/'+id+'Year3sem3sub2'+'.pdf')
+    }
+    if(req.files.Year3Sem3Pdf_sub3){
+      let Year3sem3pdf_sub3=req.files.Year3Sem3Pdf_sub3
+      Year3sem3pdf_sub3.mv('./public/file-pdf/'+id+'Year3sem3sub3'+'.pdf')
+    }
+    if(req.files.Year3Sem3Pdf_sub4){
+      let Year3sem3pdf_sub4=req.files.Year3Sem3Pdf_sub4
+      Year3sem3pdf_sub4.mv('./public/file-pdf/'+id+'Year3sem3sub4'+'.pdf')
+    }
+    if(req.files.Year3Sem3Pdf_sub5){
+      let Year3sem3pdf_sub5=req.files.Year3Sem3Pdf_sub5
+      Year3sem3pdf_sub5.mv('./public/file-pdf/'+id+'Year3sem3sub5'+'.pdf')
+    }
+    if(req.files.Year3Sem3Pdf_sub6){
+      let Year3sem3pdf_sub6=req.files.Year3Sem3Pdf_sub6
+      Year3sem3pdf_sub6.mv('./public/file-pdf/'+id+'Year3sem3sub6'+'.pdf')
+    }
+
+    // sem-4
+    if(req.files.Year3Sem4Pdf_sub1){
+      let Year3sem4pdf_sub1=req.files.Year3Sem4Pdf_sub1
+      Year3sem4pdf_sub1.mv('./public/file-pdf/'+id+'Year3sem4sub1'+'.pdf')
+    }
+    if(req.files.Year3Sem4Pdf_sub4){
+      let Year3sem4pdf_sub2=req.files.Year3Sem4Pdf_sub2
+      Year3sem4pdf_sub2.mv('./public/file-pdf/'+id+'Year3sem4sub2'+'.pdf')
+    }
+    if(req.files.Year3Sem4Pdf_sub3){
+      let Year3sem4pdf_sub3=req.files.Year3Sem4Pdf_sub3
+      Year3sem4pdf_sub3.mv('./public/file-pdf/'+id+'Year3sem4sub3'+'.pdf')
+    }
+    if(req.files.Year3Sem4Pdf_sub4){
+      let Year3sem4pdf_sub4=req.files.Year3Sem4Pdf_sub4
+      Year3sem4pdf_sub4.mv('./public/file-pdf/'+id+'Year3sem4sub4'+'.pdf')
+    }
+    if(req.files.Year3Sem4Pdf_sub5){
+      let Year3sem4pdf_sub5=req.files.Year3Sem4Pdf_sub5
+      Year3sem4pdf_sub5.mv('./public/file-pdf/'+id+'Year3sem4sub5'+'.pdf')
+    }
+    if(req.files.Year3Sem4Pdf_sub6){
+      let Year3sem4pdf_sub6=req.files.Year3Sem4Pdf_sub6
+      Year3sem4pdf_sub6.mv('./public/file-pdf/'+id+'Year3sem4sub6'+'.pdf')
+    }
+
+    // sem-5
+    if(req.files.Year3Sem5Pdf_sub1){
+      let Year3sem5pdf_sub1=req.files.Year3Sem5Pdf_sub1
+      Year3sem5pdf_sub1.mv('./public/file-pdf/'+id+'Year3sem5sub1'+'.pdf')
+    }
+    if(req.files.Year3Sem5Pdf_sub2){
+      let Year3sem5pdf_sub2=req.files.Year3Sem5Pdf_sub2
+      Year3sem5pdf_sub2.mv('./public/file-pdf/'+id+'Year3sem5sub2'+'.pdf')
+    }
+    if(req.files.Year3Sem5Pdf_sub3){
+      let Year3sem5pdf_sub3=req.files.Year3Sem5Pdf_sub3
+      Year3sem5pdf_sub3.mv('./public/file-pdf/'+id+'Year3sem5sub3'+'.pdf')
+    }
+    if(req.files.Year3Sem5Pdf_sub4){
+      let Year3sem5pdf_sub4=req.files.Year3Sem5Pdf_sub4
+      Year3sem5pdf_sub4.mv('./public/file-pdf/'+id+'Year3sem5sub4'+'.pdf')
+    }
+    if(req.files.Year3Sem5Pdf_sub5){
+      let Year3sem5pdf_sub5=req.files.Year3Sem5Pdf_sub5
+      Year3sem5pdf_sub5.mv('./public/file-pdf/'+id+'Year3sem5sub5'+'.pdf')
+    }
+    if(req.filesYear3Sem5Pdf_sub6){
+      let Year3sem5pdf_sub6=req.files.Year3Sem5Pdf_sub6
+      Year3sem5pdf_sub6.mv('./public/file-pdf/'+id+'Year3sem5sub6'+'.pdf')
+    }
+
+    // sem-6
+    if(req.files.Year3Sem6Pdf_sub1){
+      let Year3sem6pdf_sub1=req.files.Year3Sem6Pdf_sub1
+      Year3sem6pdf_sub1.mv('./public/file-pdf/'+id+'Year3sem6sub1'+'.pdf')
+    }
+    if(req.files.Year3Sem6Pdf_sub2){
+      let Year3sem6pdf_sub2=req.files.Year3Sem6Pdf_sub2
+      Year3sem6pdf_sub2.mv('./public/file-pdf/'+id+'Year3sem6sub2'+'.pdf')
+    }
+    if(req.files.Year3Sem2Pdf_sub3){
+      let Year3sem2pdf_sub3=req.files.Year3Sem2Pdf_sub3
+      Year3sem2pdf_sub3.mv('./public/file-pdf/'+id+'Year3sem2sub3'+'.pdf')
+    }
+    if(req.files.Year3Sem6Pdf_sub4){
+      let Year3sem6pdf_sub4=req.files.Year3Sem6Pdf_sub4
+      Year3sem6pdf_sub4.mv('./public/file-pdf/'+id+'Year3sem6sub4'+'.pdf')
+    }
+    if(req.files.Year3Sem6Pdf_sub5){
+      let Year3sem6pdf_sub5=req.files.Year3Sem6Pdf_sub5
+      Year3sem6pdf_sub5.mv('./public/file-pdf/'+id+'Year3sem6sub5'+'.pdf')
+    }
+    if(req.files.Year3Sem6Pdf_sub6){
+      let Year3sem6pdf_sub6=req.files.Year3Sem6Pdf_sub6
+      Year3sem6pdf_sub6.mv('./public/file-pdf/'+id+'Year3sem6sub6'+'.pdf')
+    }
      
   //})
     
