@@ -243,6 +243,50 @@ router.post('/add-file',(req,res)=>{
      let Year2sem6pdf_sub5=req.files.Year2Sem6Pdf_sub5;
      let Year2sem6pdf_sub6=req.files.Year2Sem6Pdf_sub6;
 
+
+     //Year3
+     let Year3sem1pdf_sub1=req.files.Year3Sem1Pdf_sub1;
+    let Year3sem1pdf_sub2=req.files.Year3Sem1Pdf_sub2;
+    let Year3sem1pdf_sub3=req.files.Year3Sem1Pdf_sub3;
+    let Year3sem1pdf_sub4=req.files.Year3Sem1Pdf_sub4;
+    let Year3sem1pdf_sub5=req.files.Year3Sem1Pdf_sub5;
+    let Year3sem1pdf_sub6=req.files.Year3Sem1Pdf_sub6;
+
+    let Year3sem2pdf_sub1=req.files.Year3Sem2Pdf_sub1;
+    let Year3sem2pdf_sub2=req.files.Year3Sem2Pdf_sub2;
+    let Year3sem2pdf_sub3=req.files.Year3Sem2Pdf_sub3;
+    let Year3sem2pdf_sub4=req.files.Year3Sem2Pdf_sub4;
+    let Year3sem2pdf_sub5=req.files.Year3Sem2Pdf_sub5;
+    let Year3sem2pdf_sub6=req.files.Year3Sem2Pdf_sub6;
+
+    let Year3sem3pdf_sub1=req.files.Year3Sem3Pdf_sub1;
+    let Year3sem3pdf_sub2=req.files.Year3Sem3Pdf_sub2;
+    let Year3sem3pdf_sub3=req.files.Year3Sem3Pdf_sub3;
+    let Year3sem3pdf_sub4=req.files.Year3Sem3Pdf_sub4;
+    let Year3sem3pdf_sub5=req.files.Year3Sem3Pdf_sub5;
+    let Year3sem3pdf_sub6=req.files.Year3Sem3Pdf_sub6;
+
+    let Year3sem4pdf_sub1=req.files.Year3Sem4Pdf_sub1;
+    let Year3sem4pdf_sub2=req.files.Year3Sem4Pdf_sub2;
+    let Year3sem4pdf_sub3=req.files.Year3Sem4Pdf_sub3;
+    let Year3sem4pdf_sub4=req.files.Year3Sem4Pdf_sub4;
+    let Year3sem4pdf_sub5=req.files.Year3Sem4Pdf_sub5;
+    let Year3sem4pdf_sub6=req.files.Year3Sem4Pdf_sub6;
+
+    let Year3sem5pdf_sub1=req.files.Year3Sem5Pdf_sub1;
+    let Year3sem5pdf_sub2=req.files.Year3Sem5Pdf_sub2;
+    let Year3sem5pdf_sub3=req.files.Year3Sem5Pdf_sub3;
+    let Year3sem5pdf_sub4=req.files.Year3Sem5Pdf_sub4;
+    let Year3sem5pdf_sub5=req.files.Year3Sem5Pdf_sub5;
+    let Year3sem5pdf_sub6=req.files.Year3Sem5Pdf_sub6;
+
+    let Year3sem6pdf_sub1=req.files.Year3Sem6Pdf_sub1;
+    let Year3sem6pdf_sub2=req.files.Year3Sem6Pdf_sub2;
+    let Year3sem6pdf_sub3=req.files.Year3Sem6Pdf_sub3;
+    let Year3sem6pdf_sub4=req.files.Year3Sem6Pdf_sub4;
+    let Year3sem6pdf_sub5=req.files.Year3Sem6Pdf_sub5;
+    let Year3sem6pdf_sub6=req.files.Year3Sem6Pdf_sub6;
+
     //sem1
     sem1pdf_sub1.mv('./public/file-pdf/'+id+'sem1sub1'+'.pdf',(err)=>{
       if(!err){
@@ -773,6 +817,274 @@ router.post('/add-file',(req,res)=>{
         console.log(err);
       }
     })
+
+    //Year3**************************************************************************************
+
+
+    //sem1
+    Year3sem1pdf_sub1.mv('./public/file-pdf/'+id+'Year3sem1sub1'+'.pdf',(err)=>{
+      if(!err){
+        res.render("admin/add-file")
+      }else{
+        console.log(err);
+      }
+    })
+    Year3sem1pdf_sub2.mv('./public/file-pdf/'+id+'Year3sem1sub2'+'.pdf',(err)=>{
+      if(!err){
+        res.render("admin/add-file")
+      }else{
+        console.log(err);
+      }
+    })
+    Year3sem1pdf_sub3.mv('./public/file-pdf/'+id+'Year3sem1sub3'+'.pdf',(err)=>{
+      if(!err){
+        res.render("admin/add-file")
+      }else{
+        console.log(err);
+      }
+    })
+    Year3sem1pdf_sub4.mv('./public/file-pdf/'+id+'Year3sem1sub4'+'.pdf',(err)=>{
+      if(!err){
+        res.render("admin/add-file")
+      }else{
+        console.log(err);
+      }
+    })
+    Year3sem1pdf_sub5.mv('./public/file-pdf/'+id+'Year3sem1sub5'+'.pdf',(err)=>{
+      if(!err){
+        res.render("admin/add-file")
+      }else{
+        console.log(err);
+      }
+    })
+    Year3sem1pdf_sub6.mv('./public/file-pdf/'+id+'Year3sem1sub6'+'.pdf',(err)=>{
+      if(!err){
+        res.render("admin/add-file")
+      }else{
+        console.log(err);
+      }
+    })
+
+
+    //sem2
+    Year3sem2pdf_sub1.mv('./public/file-pdf/'+id+'Year3sem2sub1'+'.pdf',(err)=>{
+      if(!err){
+        res.render("admin/add-file")
+      }else{
+        console.log(err);
+      }
+    })
+    Year3sem2pdf_sub2.mv('./public/file-pdf/'+id+'Year3sem2sub2'+'.pdf',(err)=>{
+      if(!err){
+        res.render("admin/add-file")
+      }else{
+        console.log(err);
+      }
+    })
+    Year3sem2pdf_sub3.mv('./public/file-pdf/'+id+'Year3sem2sub3'+'.pdf',(err)=>{
+      if(!err){
+        res.render("admin/add-file")
+      }else{
+        console.log(err);
+      }
+    })
+    Year3sem2pdf_sub4.mv('./public/file-pdf/'+id+'Year3sem2sub4'+'.pdf',(err)=>{
+      if(!err){
+        res.render("admin/add-file")
+      }else{
+        console.log(err);
+      }
+    })
+    Year3sem2pdf_sub5.mv('./public/file-pdf/'+id+'Year3sem2sub5'+'.pdf',(err)=>{
+      if(!err){
+        res.render("admin/add-file")
+      }else{
+        console.log(err);
+      }
+    })
+    Year3sem2pdf_sub6.mv('./public/file-pdf/'+id+'Year3sem2sub6'+'.pdf',(err)=>{
+      if(!err){
+        res.render("admin/add-file")
+      }else{
+        console.log(err);
+      }
+    })
+    //sem3
+
+    Year3sem3pdf_sub1.mv('./public/file-pdf/'+id+'Year3sem3sub1'+'.pdf',(err)=>{
+      if(!err){
+        res.render("admin/add-file")
+      }else{
+        console.log(err);
+      }
+    })
+    Year3sem3pdf_sub2.mv('./public/file-pdf/'+id+'Year3sem3sub2'+'.pdf',(err)=>{
+      if(!err){
+        res.render("admin/add-file")
+      }else{
+        console.log(err);
+      }
+    })
+    Year3sem3pdf_sub3.mv('./public/file-pdf/'+id+'Year3sem3sub3'+'.pdf',(err)=>{
+      if(!err){
+        res.render("admin/add-file")
+      }else{
+        console.log(err);
+      }
+    })
+    Year3sem3pdf_sub4.mv('./public/file-pdf/'+id+'Year3sem3sub4'+'.pdf',(err)=>{
+      if(!err){
+        res.render("admin/add-file")
+      }else{
+        console.log(err);
+      }
+    })
+    Year3sem3pdf_sub5.mv('./public/file-pdf/'+id+'Year3sem3sub5'+'.pdf',(err)=>{
+      if(!err){
+        res.render("admin/add-file")
+      }else{
+        console.log(err);
+      }
+    })
+    Year3sem3pdf_sub6.mv('./public/file-pdf/'+id+'Year3sem3sub6'+'.pdf',(err)=>{
+      if(!err){
+        res.render("admin/add-file")
+      }else{
+        console.log(err);
+      }
+    })
+
+    //sem4
+    Year3sem4pdf_sub1.mv('./public/file-pdf/'+id+'Year3sem4sub1'+'.pdf',(err)=>{
+      if(!err){
+        res.render("admin/add-file")
+      }else{
+        console.log(err);
+      }
+    })
+    Year3sem4pdf_sub2.mv('./public/file-pdf/'+id+'Year3sem4sub2'+'.pdf',(err)=>{
+      if(!err){
+        res.render("admin/add-file")
+      }else{
+        console.log(err);
+      }
+    })
+    Year3sem4pdf_sub3.mv('./public/file-pdf/'+id+'Year3sem4sub3'+'.pdf',(err)=>{
+      if(!err){
+        res.render("admin/add-file")
+      }else{
+        console.log(err);
+      }
+    })
+    Year3sem4pdf_sub4.mv('./public/file-pdf/'+id+'Year3sem4sub4'+'.pdf',(err)=>{
+      if(!err){
+        res.render("admin/add-file")
+      }else{
+        console.log(err);
+      }
+    })
+    Year3sem4pdf_sub5.mv('./public/file-pdf/'+id+'Year3sem4sub5'+'.pdf',(err)=>{
+      if(!err){
+        res.render("admin/add-file")
+      }else{
+        console.log(err);
+      }
+    })
+    Year3sem4pdf_sub6.mv('./public/file-pdf/'+id+'Year3sem4sub6'+'.pdf',(err)=>{
+      if(!err){
+        res.render("admin/add-file")
+      }else{
+        console.log(err);
+      }
+    })
+
+    //sem 5
+    Year3sem5pdf_sub1.mv('./public/file-pdf/'+id+'Year3sem5sub1'+'.pdf',(err)=>{
+      if(!err){
+        res.render("admin/add-file")
+      }else{
+        console.log(err);
+      }
+    })
+    Year3sem5pdf_sub2.mv('./public/file-pdf/'+id+'Year3sem5sub2'+'.pdf',(err)=>{
+      if(!err){
+        res.render("admin/add-file")
+      }else{
+        console.log(err);
+      }
+    })
+    Year3sem5pdf_sub3.mv('./public/file-pdf/'+id+'Year3sem5sub3'+'.pdf',(err)=>{
+      if(!err){
+        res.render("admin/add-file")
+      }else{
+        console.log(err);
+      }
+    })
+    Year3sem5pdf_sub4.mv('./public/file-pdf/'+id+'Year3sem5sub4'+'.pdf',(err)=>{
+      if(!err){
+        res.render("admin/add-file")
+      }else{
+        console.log(err);
+      }
+    })
+    Year3sem5pdf_sub5.mv('./public/file-pdf/'+id+'Year3sem5sub5'+'.pdf',(err)=>{
+      if(!err){
+        res.render("admin/add-file")
+      }else{
+        console.log(err);
+      }
+    })
+    Year3sem5pdf_sub6.mv('./public/file-pdf/'+id+'Year3sem5sub6'+'.pdf',(err)=>{
+      if(!err){
+        res.render("admin/add-file")
+      }else{
+        console.log(err);
+      }
+    })
+    //sem 6
+    Year3sem6pdf_sub1.mv('./public/file-pdf/'+id+'Year3sem6sub1'+'.pdf',(err)=>{
+      if(!err){
+        res.render("admin/add-file")
+      }else{
+        console.log(err);
+      }
+    })
+    Year3sem6pdf_sub2.mv('./public/file-pdf/'+id+'Year3sem6sub2'+'.pdf',(err)=>{
+      if(!err){
+        res.render("admin/add-file")
+      }else{
+        console.log(err);
+      }
+    })
+    Year3sem6pdf_sub3.mv('./public/file-pdf/'+id+'Year3sem6sub3'+'.pdf',(err)=>{
+      if(!err){
+        res.render("admin/add-file")
+      }else{
+        console.log(err);
+      }
+    })
+    Year3sem6pdf_sub4.mv('./public/file-pdf/'+id+'Year3sem6sub4'+'.pdf',(err)=>{
+      if(!err){
+        res.render("admin/add-file")
+      }else{
+        console.log(err);
+      }
+    })
+    Year3sem6pdf_sub5.mv('./public/file-pdf/'+id+'Year3sem6sub5'+'.pdf',(err)=>{
+      if(!err){
+        res.render("admin/add-file")
+      }else{
+        console.log(err);
+      }
+    })
+    Year3sem6pdf_sub6.mv('./public/file-pdf/'+id+'Year3sem6sub6'+'.pdf',(err)=>{
+      if(!err){
+        res.render("admin/add-file")
+      }else{
+        console.log(err);
+      }
+    })
+
   })
 })
 //delete file
