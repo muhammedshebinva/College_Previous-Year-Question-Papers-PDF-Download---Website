@@ -7,12 +7,12 @@
   
                     <label for="">Course</label>
                     <input type="text" name="Name" class="form-control" value="{{file.Name}}">
-                    
-                    {{!-- new edit --}}
-                     <label for="">year</label><br>
+                    <br>
+                    {{!-- Year 1 --}}
+                     <label style="font-weight: bold;"  for="">year 1</label><br>
                     <input type="text" value="{{file.Year}}" name="Year" class="form-control">
 
-
+<br>
                     <label for="">Upload Question papers</label><br>
                     
                     <label for="">Semester</label><br>
@@ -289,12 +289,12 @@
                     {{#if file.Sem6Sub_name6}}
                     <td><a href="/file-pdf/{{file._id}}sem6sub6.pdf" id="pdfView"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
                     {{/if}}
-                    <input type="file"  name="Sem6Pdf_sub6" class="form-control" onchange="viewPdf(event)">     
-                    {{!-- new edit --}}
+                    <input type="file"  name="Sem6Pdf_sub6" class="form-control" onchange="viewPdf(event)">    <br> 
+                    {{!-- Year2 --}}
 
-                    <label for="">year</label><br>
+                    <label style="font-weight: bold;"  for="">year 2</label><br>
                     <input type="text" value="{{file.Year2}}" name="Year2" class="form-control">
-
+<br>
 
                     <label for="">Upload Question papers</label><br>
                     
@@ -573,6 +573,291 @@
                     <td><a href="/file-pdf/{{file._id}}Year2sem6sub6.pdf" id="pdfView"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
                     {{/if}}
                     <input type="file"  name="Year2Sem6Pdf_sub6" class="form-control" onchange="viewPdf(event)">
+
+
+                    <br>
+                    {{!-- Year 3 --}}
+                     <label style="font-weight: bold;" for="">year 3</label><br>
+                    <input type="text" value="{{file.Year3}}" name="Year" class="form-control">
+
+<br>
+                    <label for="">Upload Question papers</label><br>
+                    
+                    <label for="">Semester</label><br>
+                    <input type="text" value="{{file.Year3Sem1}}" name="Year3Sem1" class="form-control">
+                   
+
+                    <label for="">Subject Name</label>
+                    <input type="text" value="{{file.Year3Sem1Sub_name1}}" name="Year3Sem1Sub_name1" class="form-control">
+                    {{#if file.Year3Sem1Sub_name1}}
+                    <td><a href="/file-pdf/{{file._id}}Year3sem1sub1.pdf" id="pdfView"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
+                    {{/if}}
+                    <input type="file"  name="Year3Sem1Pdf_sub1" class="form-control" onchange="viewPdf(event)">
+
+                    <label for="">Subject Name</label>
+                    <input type="text" value="{{file.Year3Sem1Sub_name2}}" name="Year3Sem1Sub_name2" class="form-control">
+                     {{#if file.Year3Sem1Sub_name2}}
+                    <td><a href="/file-pdf/{{file._id}}Year3sem1sub2.pdf" id="pdfView"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
+                    {{/if}}
+                    <input type="file"  name="Year3Sem1Pdf_sub2" class="form-control" onchange="viewPdf(event)">
+
+                    <label for="">Subject Name</label>
+                    <input type="text" value="{{file.Year3Sem1Sub_name3}}" name="Year3Sem1Sub_name3" class="form-control">
+                     {{#if file.Year3Sem1Sub_name3}}
+                    <td><a href="/file-pdf/{{file._id}}Year3sem1sub3.pdf" id="pdfView"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
+                    {{/if}}
+                    <input type="file"  name="Sem1Pdf_sub3" class="form-control" onchange="viewPdf(event)">
+
+                    <label for="">Subject Name</label>
+                    <input type="text"value="{{file.Year3Sem1Sub_name4}}" name="Year3Sem1Sub_name4" class="form-control">
+                     {{#if file.Year3Sem1Sub_name4}}
+                    <td><a href="/file-pdf/{{file._id}}Year3sem1sub4.pdf" id="pdfView"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
+                    {{/if}}
+                    <input type="file"  name="Year3Sem1Pdf_sub4" class="form-control" onchange="viewPdf(event)">
+
+                    <label for="">Subject Name</label>
+                    <input type="text" value="{{file.Year3Sem1Sub_name5}}" name="Year3Sem1Sub_name5" class="form-control">
+                     {{#if file.Year3Sem1Sub_name1}}
+                    <td><a href="/file-pdf/{{file._id}}Year3sem1sub5.pdf" id="pdfView"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
+                    {{/if}}
+                    <input type="file"  name="Year3Sem1Pdf_sub5" class="form-control" onchange="viewPdf(event)">
+
+                    <label for="">Subject Name</label>
+                    <input type="text"value="{{file.Year3Sem1Sub_name6}}" name="Year3Sem1Sub_name6" class="form-control">
+                     {{#if file.Year3Sem1Sub_name6}}
+                    <td><a href="/file-pdf/{{file._id}}Year3sem1sub6.pdf" id="pdfView"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
+                    {{/if}}
+                    <input type="file"  name="Year3Sem1Pdf_sub6" class="form-control" onchange="viewPdf(event)">  
+
+                    {{!-- sem2 --}}
+                    <label for="">Semester</label><br>
+                    <input type="text" value="2" name="Year3Sem2" class="form-control">
+
+                    <label for="">Subject Name</label>
+                    <input type="text" value="{{file.Year3Sem2Sub_name1}}" name="Year3Sem2Sub_name1" class="form-control">
+                     {{#if file.Year3Sem2Sub_name1}}
+                    <td><a href="/file-pdf/{{file._id}}Year3sem2sub1.pdf" id="pdfView"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
+                    {{/if}}
+                    <input type="file"  name="Year3Sem2Pdf_sub1" class="form-control" onchange="viewPdf(event)">
+
+                    <label for="">Subject Name</label>
+                    <input type="text" value="{{file.Year3Sem2Sub_name2}}" name="Year3Sem2Sub_name2" class="form-control">
+                     {{#if file.Year3Sem2Sub_name2}}
+                    <td><a href="/file-pdf/{{file._id}}Year3sem2sub2.pdf" id="pdfView"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
+                    {{/if}}
+                    <input type="file"  name="Year3Sem2Pdf_sub2" class="form-control" onchange="viewPdf(event)">
+
+                    <label for="">Subject Name</label>
+                    <input type="text" value="{{file.Year3Sem2Sub_name3}}" name="Year3Sem2Sub_name3" class="form-control">
+                     {{#if file.Year3Sem2Sub_name3}}
+                    <td><a href="/file-pdf/{{file._id}}Year3sem2sub3.pdf" id="pdfView"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
+                    {{/if}}
+                    <input type="file"  name="Year3Sem2Pdf_sub3" class="form-control" onchange="viewPdf(event)">
+
+                    <label for="">Subject Name</label>
+                    <input type="text" value="{{file.Year3Sem2Sub_name4}}" name="Year3Sem2Sub_name4" class="form-control">
+                     {{#if file.Year3Sem2Sub_name4}}
+                    <td><a href="/file-pdf/{{file._id}}Year3sem2sub4.pdf" id="pdfView"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
+                    {{/if}}
+                    <input type="file"  name="Year3Sem2Pdf_sub4" class="form-control" onchange="viewPdf(event)">
+
+                    <label for="">Subject Name</label>
+                    <input type="text" value="{{file.Year3Sem2Sub_name5}}" name="Year3Sem2Sub_name5" class="form-control">
+                     {{#if file.Year3Sem2Sub_name5}}
+                    <td><a href="/file-pdf/{{file._id}}Year3sem2sub5.pdf" id="pdfView"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
+                    {{/if}}
+                    <input type="file"  name="Year3Sem2Pdf_sub5" class="form-control" onchange="viewPdf(event)">
+
+                    <label for="">Subject Name</label>
+                    <input type="text" value="{{file.Year3Sem2Sub_name6}}" name="Year3Sem2Sub_name6" class="form-control">
+                     {{#if file.Year3Sem2Sub_name6}}
+                    <td><a href="/file-pdf/{{file._id}}Year3sem2sub6.pdf" id="pdfView"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
+                    {{/if}}
+                    <input type="file"  name="Year3Sem2Pdf_sub6" class="form-control" onchange="viewPdf(event)">  
+
+                    {{!-- sem 3 --}}
+                    <label for="">Semester</label><br>
+                    <input type="text" value="3" name="Year3Sem3" class="form-control">
+
+                    <label for="">Subject Name</label>
+                    <input type="text" value="{{file.Year3Sem3Sub_name1}}" name="Year3Sem3Sub_name1" class="form-control">
+                     {{#if file.Year3Sem3Sub_name1}}
+                    <td><a href="/file-pdf/{{file._id}}Year3sem3sub1.pdf" id="pdfView"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
+                    {{/if}}
+                    <input type="file"  name="Year3Sem3Pdf_sub1" class="form-control" onchange="viewPdf(event)">
+
+                    <label for="">Subject Name</label>
+                    <input type="text" value="{{file.Year3Sem3Sub_name2}}" name="Year3Sem3Sub_name2" class="form-control">
+                    {{#if file.Year3Sem3Sub_name2}}
+                    <td><a href="/file-pdf/{{file._id}}Year3sem3sub2.pdf" id="pdfView"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
+                    {{/if}}
+                    <input type="file"  name="Year3Sem3Pdf_sub2" class="form-control" onchange="viewPdf(event)">
+
+                    <label for="">Subject Name</label>
+                    <input type="text" value="{{file.Year3Sem3Sub_name3}}" name="Year3Sem3Sub_name3" class="form-control">
+                    {{#if file.Year3Sem3Sub_name3}}
+                    <td><a href="/file-pdf/{{file._id}}Year3sem3sub3.pdf" id="pdfView"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
+                    {{/if}}
+                    <input type="file"  name="Year3Sem3Pdf_sub3" class="form-control" onchange="viewPdf(event)">
+
+                    <label for="">Subject Name</label>
+                    <input type="text" value="{{file.Year3Sem3Sub_name4}}" name="Year3Sem3Sub_name4" class="form-control">
+                    {{#if file.Year3Sem3Sub_name4}}
+                    <td><a href="/file-pdf/{{file._id}}Year3sem3sub4.pdf" id="pdfView"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
+                    {{/if}}
+                    <input type="file"  name="Year3Sem3Pdf_sub4" class="form-control"onchange="viewPdf(event)">
+
+                    <label for="">Subject Name</label>
+                    <input type="text" value="{{file.Year3Sem3Sub_name5}}" name="Sem3Sub_name5" class="form-control">
+                    {{#if file.Year3Sem3Sub_name5}}
+                    <td><a href="/file-pdf/{{file._id}}Year3sem3sub5.pdf" id="pdfView"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
+                    {{/if}}
+                    <input type="file"  name="Year3Sem3Pdf_sub5" class="form-control" onchange="viewPdf(event)">
+
+                    <label for="">Subject Name</label>
+                    <input type="text" value="{{file.Year3Sem3Sub_name6}}" name="Year3Sem3Sub_name6" class="form-control">
+                    {{#if file.Year3Sem3Sub_name6}}
+                    <td><a href="/file-pdf/{{file._id}}Year3sem3sub6.pdf" id="pdfView"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
+                    {{/if}}
+                    <input type="file"  name="Year3Sem3Pdf_sub6" class="form-control" onchange="viewPdf(event)">  
+
+                    {{!-- sem 4 --}}
+                    <label for="">Semester</label><br>
+                    <input type="text" value="4" name="Year3Sem4" class="form-control">
+
+                    <label for="">Subject Name</label>
+                    <input type="text" value="{{file.Year3Sem4Sub_name1}}" name="Year3Sem4Sub_name1" class="form-control">
+                    {{#if file.Year3Sem4Sub_name1}}
+                    <td><a href="/file-pdf/{{file._id}}Year3sem4sub1.pdf" id="pdfView"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
+                    {{/if}}
+                    <input type="file"  name="Year3Sem4Pdf_sub1" class="form-control" onchange="viewPdf(event)">
+
+                    <label for="">Subject Name</label>
+                    <input type="text" value="{{file.Year3Sem4Sub_name2}}" name="Year3Sem4Sub_name2" class="form-control">
+                     {{#if file.Year3Sem4Sub_name2}}
+                    <td><a href="/file-pdf/{{file._id}}Year3sem4sub2.pdf" id="pdfView"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
+                    {{/if}}
+                    <input type="file"  name="Year3Sem4Pdf_sub2" class="form-control" onchange="viewPdf(event)">
+
+                    <label for="">Subject Name</label>
+                    <input type="text" value="{{file.Year3Sem4Sub_name3}}" name="Year3Sem4Sub_name3" class="form-control">
+                     {{#if file.Year3Sem4Sub_name3}}
+                    <td><a href="/file-pdf/{{file._id}}Year3sem4sub3.pdf" id="pdfView"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
+                    {{/if}}
+                    <input type="file"  name="Year3Sem4Pdf_sub3" class="form-control" onchange="viewPdf(event)">
+
+                    <label for="">Subject Name</label>
+                    <input type="text" value="{{file.Year3Sem4Sub_name4}}" name="Year3Sem4Sub_name4" class="form-control">
+                     {{#if file.Year3Sem4Sub_name4}}
+                    <td><a href="/file-pdf/{{file._id}}Year3sem4sub4.pdf" id="pdfView"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
+                    {{/if}}
+                    <input type="file"  name="Year3Sem4Pdf_sub4" class="form-control" onchange="viewPdf(event)">
+
+                    <label for="">Subject Name</label>
+                    <input type="text" value="{{file.Year3Sem4Sub_name5}}" name="Year3Sem4Sub_name5" class="form-control">
+                     {{#if file.Year3Sem4Sub_name5}}
+                    <td><a href="/file-pdf/{{file._id}}Year3sem4sub5.pdf" id="pdfView"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
+                    {{/if}}
+                    <input type="file"  name="Year3Sem4Pdf_sub5" class="form-control" onchange="viewPdf(event)">
+
+                    <label for="">Subject Name</label>
+                    <input type="text" value="{{file.Year3Sem4Sub_name6}}" name="Year3Sem4Sub_name6" class="form-control">
+                     {{#if file.Year3Sem4Sub_name6}}
+                    <td><a href="/file-pdf/{{file._id}}Year3sem4sub6.pdf" id="pdfView"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
+                    {{/if}}
+                    <input type="file"  name="Year3Sem4Pdf_sub6" class="form-control" onchange="viewPdf(event)">  
+
+                    {{!-- sem 5 --}}
+                    <label for="">Semester</label><br>
+                    <input type="text" value="5" name="Year3Sem5" class="form-control">
+
+                    <label for="">Subject Name</label>
+                    <input type="text" value="{{file.Sem5Sub_name1}}" name="Year3Sem5Sub_name1" class="form-control">
+                     {{#if file.Year3Sem5Sub_name1}}
+                    <td><a href="/file-pdf/{{file._id}}Year3sem5sub1.pdf" id="pdfView"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
+                    {{/if}}
+                    <input type="file"  name="Year3Sem5Pdf_sub1" class="form-control" onchange="viewPdf(event)">
+
+                    <label for="">Subject Name</label>
+                    <input type="text" value="{{file.Year3Sem5Sub_name2}}" name="Sem5Sub_name2" class="form-control">
+                     {{#if file.Year3Sem5Sub_name2}}
+                    <td><a href="/file-pdf/{{file._id}}Year3sem5sub2.pdf" id="pdfView"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
+                    {{/if}}
+                    <input type="file"  name="Sem5Pdf_sub2" class="form-control" onchange="viewPdf(event)">
+
+                    <label for="">Subject Name</label>
+                    <input type="text" value="{{file.Year3Sem5Sub_name3}}" name="Sem5Sub_name3" class="form-control">
+                     {{#if file.Year3Sem5Sub_name3}}
+                    <td><a href="/file-pdf/{{file._id}}Year3sem5sub3.pdf" id="pdfView"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
+                    {{/if}}
+                    <input type="file"  name="Year3Sem5Pdf_sub3" class="form-control" onchange="viewPdf(event)">
+
+                    <label for="">Subject Name</label>
+                    <input type="text" value="{{file.Year3Sem5Sub_name4}}" name="Year3Sem5Sub_name4" class="form-control">
+                     {{#if file.Year3Sem5Sub_name4}}
+                    <td><a href="/file-pdf/{{file._id}}Year3sem5sub4.pdf" id="pdfView"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
+                    {{/if}}
+                    <input type="file"  name="Year3Sem5Pdf_sub4" class="form-control" onchange="viewPdf(event)">
+
+                    <label for="">Subject Name</label>
+                    <input type="text" value="{{file.Year3Sem5Sub_name5}}" name="Year3Sem5Sub_name5" class="form-control">
+                     {{#if file.Year3Sem5Sub_name5}}
+                    <td><a href="/file-pdf/{{file._id}}Year3sem5sub5.pdf" id="pdfView"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
+                    {{/if}}
+                    <input type="file"  name="Year3Sem5Pdf_sub5" class="form-control" onchange="viewPdf(event)">
+
+                    <label for="">Subject Name</label>
+                    <input type="text" value="{{file.Year3Sem5Sub_name6}}" name="Sem5Sub_name6" class="form-control">
+                     {{#if file.Year3Sem5Sub_name6}}
+                    <td><a href="/file-pdf/{{file._id}}Year3sem5sub6.pdf" id="pdfView"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
+                    {{/if}}
+                    <input type="file"  name="Year3Sem5Pdf_sub6" class="form-control" onchange="viewPdf(event)">      
+
+                    {{!-- sem 6 --}}
+                    <label for="">Semester</label><br>
+                    <input type="text" value="6" name="Year3Sem6" class="form-control">
+
+                    <label for="">Subject Name</label>
+                    <input type="text" value="{{file.Year3Sem6Sub_name1}}" name="Year3Sem6Sub_name1" class="form-control">
+                     {{#if file.Year3Sem6Sub_name1}}
+                    <td><a href="/file-pdf/{{file._id}}Year3sem6sub1.pdf" id="pdfView"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
+                    {{/if}}
+                    <input type="file"  name="Year3Sem6Pdf_sub1" class="form-control" onchange="viewPdf(event)">
+
+                    <label for="">Subject Name</label>
+                    <input type="text" value="{{file.Year3Sem6Sub_name2}}" name="Year3Sem6Sub_name2" class="form-control">
+                    {{#if file.Year3Sem6Sub_name2}}
+                    <td><a href="/file-pdf/{{file._id}}Year3sem6sub2.pdf" id="pdfView"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
+                    {{/if}}
+                    <input type="file"  name="Year3Sem6Pdf_sub2" class="form-control" onchange="viewPdf(event)">
+
+                    <label for="">Subject Name</label>
+                    <input type="text" value="{{file.Sem6Sub_name3}}" name="Year3Sem6Sub_name3" class="form-control">
+                    {{#if file.Year3Sem6Sub_name3}}
+                    <td><a href="/file-pdf/{{file._id}}Year3sem6sub3.pdf" id="pdfView"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
+                    {{/if}}
+                    <input type="file"  name="Year3Sem6Pdf_sub3" class="form-control" onchange="viewPdf(event)">
+
+                    <label for="">Subject Name</label>
+                    <input type="text" value="{{fileYear3Sem6Sub_name4}}" name="Year3Sem6Sub_name4" class="form-control">
+                    {{#if file.Year3Sem6Sub_name4}}
+                    <td><a href="/file-pdf/{{file._id}}Year3sem6sub4.pdf" id="pdfView"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
+                    {{/if}}
+                    <input type="file"  name="Year3Sem6Pdf_sub4" class="form-control" onchange="viewPdf(event)">
+
+                    <label for="">Subject Name</label>
+                    <input type="text" value="{{file.Year3Sem6Sub_name5}}" name="Year3Sem6Sub_name5" class="form-control">
+                    {{#if file.Year3Sem6Sub_name5}}
+                    <td><a href="/file-pdf/{{file._id}}Year3sem6sub5.pdf" id="pdfView"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
+                    {{/if}}
+                    <input type="file"  name="Year3Sem6Pdf_sub5" class="form-control" onchange="viewPdf(event)">
+
+                    <label for="">Subject Name</label>
+                    <input type="text" value="{{file.Year3Sem6Sub_name6}}" name="Year3Sem6Sub_name6" class="form-control">
+                    {{#if file.Year3Sem6Sub_name6}}
+                    <td><a href="/file-pdf/{{file._id}}Year3sem6sub6.pdf" id="pdfView"><img style="width: 30px; height: 30px;" src="https://www.pngitem.com/pimgs/m/389-3891868_transparent-sun-burst-png-pdf-file-icon-png.png" alt=""></a></td>
+                    {{/if}}
+                    <input type="file"  name="Year3Sem6Pdf_sub6" class="form-control" onchange="viewPdf(event)"> 
                     
                     <button class="btn btn-success mt-4">Submit</button>
                 </form>
