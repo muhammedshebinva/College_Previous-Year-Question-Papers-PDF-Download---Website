@@ -139,7 +139,7 @@ module.exports={
                     Year2Sem6Sub_name5:fileDetails.Year2Sem6Sub_name5,
                     Year2Sem6Sub_name6:fileDetails.Year2Sem6Sub_name6,
 
-                    Year3:fileDetails.Year3 ,
+                    Year3:fileDetails.Year3,
 
                     Year3Sem1:fileDetails.Year3Sem1,
                     Year3Sem1Sub_name1:fileDetails.Year3Sem1Sub_name1,
