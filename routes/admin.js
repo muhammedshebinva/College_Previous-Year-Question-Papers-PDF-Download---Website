@@ -137,7 +137,7 @@ router.get('/admin_About', (req,res)=>{
 })
 
 //admin Contact page
-//Admin About Page
+
 router.get('/admin_Contact', (req,res)=>{
   let admindata=req.session.admin
   res.render('admin/admin_Contact',{admin:true,admindata})
@@ -151,21 +151,7 @@ router.get('/add-file',verifyAdminLogin,function(req,res){
 router.post('/add-file',(req,res)=>{
  
   fileHelpers.addFile(req.body,(id)=>{
-    let pdf_sub1=req.files.Pdf_sub1
-    let pdf_sub2=req.files.Pdf_sub2
-    let pdf_sub3=req.files.Pdf_sub3
-    let pdf_sub4=req.files.Pdf_sub4
-    let pdf_sub5=req.files.Pdf_sub5
-    let pdf_sub6=req.files.Pdf_sub6
-
     
-
-    
-    
-
-     
-
-
     
     // year 1 ###############################################################################
 
@@ -1299,7 +1285,7 @@ router.post('/add-file',(req,res)=>{
     })
   }
 
-
+res.redirect('/admin')
 
   })
 })

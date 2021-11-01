@@ -21,6 +21,13 @@
       <td><a href="/file-pdf/{{file._id}}sem1sub1.pdf">View</a></td>
      
     </tr>
+    {{else}}
+    <tr>
+      <th scope="row">1</th>
+      <td>No files Available</td>
+      <td></td>
+     
+    </tr>
     {{/if}}
     {{#if file.Sem1Sub_name2}}
     <tr>
@@ -68,6 +75,7 @@
     </div>
 </section>
 
+{{#if file.Year2Sem1Sub_name1}}
 <section>
     <div class="container">
         <div class="row">
@@ -136,7 +144,8 @@
         </div>
     </div>
 </section>
-
+{{/if}}
+{{#if file.Year3Sem1Sub_name1}}
 <section>
     <div class="container">
         <div class="row">
@@ -205,3 +214,4 @@
         </div>
     </div>
 </section>
+{{/if}}

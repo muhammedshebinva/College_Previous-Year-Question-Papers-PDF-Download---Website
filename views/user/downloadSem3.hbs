@@ -21,6 +21,13 @@
       <td><a href="/file-pdf/{{file._id}}sem3sub1.pdf">View</a></td>
      
     </tr>
+    {{else}}
+    <tr>
+      <th scope="row">1</th>
+      <td>No files Available</td>
+      <td></td>
+     
+    </tr>
     {{/if}}
     {{#if file.Sem3Sub_name1}}
     <tr>
@@ -67,7 +74,7 @@
         </div>
     </div>
 </section>
-
+{{#if file.Year2Sem6Sub_name1}}
 <section>
     <div class="container">
         <div class="row">
@@ -135,3 +142,74 @@
         </div>
     </div>
 </section>
+{{/if}}
+{{#if file.Year3Sem3Sub_name1}}
+<section>
+    <div class="container">
+        <div class="row">
+            <div>
+                <table class="table mt-5">
+  <thead class="table-dark">
+    <tr>
+      <th scope="col">S.No</th>
+      <th scope="col">Subject Name</th>
+      <th scope="col">{{file.Year3}}</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+      {{#if file.Year3Sem3Sub_name1}}
+    <tr>
+      <th scope="row">1</th>
+      <td>{{file.Year3Sem3Sub_name1}}</td>
+      <td><a href="/file-pdf/{{file._id}}Year3sem3sub1.pdf">View</a></td>
+     
+    </tr>
+    {{/if}}
+    {{#if file.Year3Sem1Sub_name2}}
+    <tr>
+      <th scope="row">2</th>
+      <td>{{file.Year3Sem3Sub_name2}}</td>
+      <td><a href="/file-pdf/{{file._id}}Year3sem3sub2.pdf">View</a></td>
+      
+    </tr>
+    {{/if}}
+    {{#if file.Year3Sem3Sub_name3}}
+    <tr>
+      <th scope="row">3</th>
+      <td>{{file.Year3Sem3Sub_name3}}</td>
+      <td><a href="/file-pdf/{{file._id}}Year3sem3sub3.pdf">View</a></td>
+    </tr>
+    {{/if}}
+      {{#if file.Year3Sem3Sub_name4}}
+      <tr>
+      <th scope="row">4</th>
+      <td>{{file.Year3Sem3Sub_name4}}</td>
+      <td><a href="/file-pdf/{{file._id}}Year3sem3sub4.pdf">View</a></td>
+      </tr>
+      {{/if}}
+
+      {{#if file.Year3Sem3Sub_name5}}
+      <tr>
+      <th scope="row">5</th>
+      <td>{{file.Year3Sem3Sub_name5}}</td>
+      <td><a href="/file-pdf/{{file._id}}Year3sem3sub5.pdf">View</a></td>
+      </tr>
+      {{/if}}
+
+      {{#if file.Year3Sem3Sub_name6}}
+      <tr>
+      <th scope="row">6</th>
+      <td>{{file.Year2Sem3Sub_name6}}</td>
+      <td><a href="/file-pdf/{{file._id}}Year3sem3sub6.pdf">View</a></td>
+      </tr>
+      {{/if}}
+      
+    
+  </tbody>
+</table>
+            </div>
+        </div>
+    </div>
+</section>
+{{/if}}
