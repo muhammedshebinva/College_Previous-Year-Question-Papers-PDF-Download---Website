@@ -711,7 +711,7 @@ router.post('/add-file',(req,res)=>{
     })
   }
   if(req.files.Year2Sem3Pdf_sub6){ 
-    let sem3pdf_sub6=req.files.Year2Sem3Pdf_sub6; 
+    let Year2sem3pdf_sub6=req.files.Year2Sem3Pdf_sub6; 
     Year2sem3pdf_sub6.mv('./public/file-pdf/'+id+'Year2sem3sub6'+'.pdf',(err)=>{
       if(!err){
         res.render("admin/add-file")
