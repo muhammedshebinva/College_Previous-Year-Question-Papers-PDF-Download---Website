@@ -1,4 +1,10 @@
 # Collage_Previous-Year-Question-Papers-PDF-Download---Website
+its a website to download previous year quetion paper pdfs , 
+
+admin can add/edit new cources semester wise subjects year pdfs etc, admin can view users by admin login
+
+user can downlod/view datas by login/signup
+
 to start run
 
 $ npm install 
